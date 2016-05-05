@@ -1543,6 +1543,17 @@ footer .span2 p a:hover{
     background: #FFF;
 }
 
+.content .container:after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: #F7F7F7;
+}
+
 .content main{
     padding: 35px 0;
 }
