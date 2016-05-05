@@ -18,7 +18,8 @@
     <![endif]-->
     
 
-<?php wp_head(); ?>
+	<?php wp_head(); ?>
+
 </head>
 <body <?php body_class(); ?>>
 
@@ -49,6 +50,14 @@
 		<?php get_template_part("partials/section", "slider"); ?>	
 		
 
-	<?php } // END if home ?>
+	<?php }else{ ?>
+
+		<!-- =================================================
+			section title
+		================================================== -->
+		<?php get_template_part("partials/section", "title"); ?>	
+
+
+	<?php }//end else ?>
 
 </header>

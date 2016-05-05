@@ -1,24 +1,4 @@
 
-	<?php
-
-	 $acf_fields = get_field('section_info','option'); 
-
-	
-
-	 foreach ($acf_fields as $key => $value) {
-	 	
-	 	foreach ($value['info-box'] as $ib_key => $ib_val) {
-
-	 		var_dump($ib_val['title']);
-
-
-	 		
-	 	}
-
-	 }
-
-	?>
-
 	<?php if( have_rows('section_info', 'option') ): ?>
 
 		<?php while ( have_rows('section_info', 'option') ) : the_row(); ?>

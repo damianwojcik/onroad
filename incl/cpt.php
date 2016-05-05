@@ -40,7 +40,6 @@
 			'description'           => __( 'Opis slajdu', 'text_domain' ),
 			'labels'                => $labels,
 			'supports'              => array( 'title' ),
-			'taxonomies'            => false,
 			'hierarchical'          => false,
 			'public'                => true,
 			'show_ui'               => true,
@@ -59,5 +58,7 @@
 		register_post_type( 'slide', $args );
 
 	}
+
+	add_action( 'init', 'custom_post_type', 0 );
 
 ?>

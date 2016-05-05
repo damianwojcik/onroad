@@ -153,6 +153,26 @@ blockquote{
     left: 0;
 }
 
+
+/*breadcrumbs*/
+.breadcrumbs-wrap{
+    display: table;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.breadcrumbs-wrap > span{
+    font-size: 12px;
+    color: #959595;
+    text-transform: uppercase;
+}
+
+.breadcrumbs-wrap .separator{
+    color: #959595;
+    margin: 0 12px;
+}
+
+
 /*photo wrappers*/
 .photo{
     background-position: center;
@@ -195,6 +215,16 @@ blockquote{
 .wrap-photo-small .photo{
     height: 180px;
     width: 310px;
+}
+
+.wrap-photo-large.single-photo{
+    height: 460px;
+    width: 740px;
+}
+
+.wrap-photo-large.single-photo .photo{
+    width: 720px;
+    height: 440px;
 }
 
 
@@ -1151,6 +1181,10 @@ main section{
     width: 100%;
 }
 
+.intro .span8 .wrap{
+    text-align: left;
+}
+
 .intro .span4 .wrap{
     padding-top: 30px;
 }
@@ -1603,7 +1637,7 @@ aside .container .row:not(:first-child){
     padding-top: 45px;
 }
 
-aside .sidebar-photo{
+aside .article-cover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1612,7 +1646,7 @@ aside .sidebar-photo{
 }
 
 aside ul.recent-articles,
-aside ul.promotions{
+aside ul.deals-listing{
     display: table;
     padding-top: 10px;
     width: 100%;
@@ -1625,7 +1659,7 @@ aside ul li{
     border-bottom: 1px solid #eaeaea;
 }
 
-aside ul.recent-articles li .sidebar-photo{
+aside ul.recent-articles li .article-cover{
     margin-bottom: 25px;
 }
 
@@ -1639,11 +1673,11 @@ aside ul.recent-articles li span.date{
     display: inline-block;
 }
 
-aside ul.promotions{
+aside ul.deals-listing{
     padding-top: 0;
 }
 
-aside ul.promotions span.value{
+aside ul.deals-listing li span.value{
     display: block;
     font-size: 36px;
     line-height: 1;
@@ -1654,7 +1688,7 @@ aside ul.promotions span.value{
     margin-right: 3%;
 }
 
-aside ul.promotions span.description{
+aside ul.deals-listing li span.description{
     display: block;
     float: left;
     width: 67%;
@@ -1736,43 +1770,8 @@ aside ul.promotions span.description{
 
 
 
-/*po wordpressie do wywalenia*/
-.breadcrumbs-wrap{
-    display: table;
-    width: 100%;
-    margin-bottom: 45px;
-}
+/*out*/
 
-.breadcrumbs-wrap ul{
-    display: table;
-    width: 100%;
-    list-style-type: none;
-}
-
-.breadcrumbs-wrap ul li{
-    display: inline-block;
-    float: left;
-    color: #959595;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-left: 24px;
-    position: relative;
-}
-
-.breadcrumbs-wrap ul li:first-child{
-    margin-left: 0;
-}
-
-.breadcrumbs-wrap ul li:before{
-    content: "/";
-    position: absolute;
-    top: 0;
-    left: -12px;
-}
-
-.breadcrumbs-wrap ul li:first-child:before{
-    display: none;
-}
 
 .full-width-wrapper,
 .article-img{

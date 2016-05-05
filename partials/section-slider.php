@@ -1,10 +1,9 @@
 	
-	<?php $args = array(
-		'posts_per_page'   => 3,
-		'post_type'        => 'slide',
-		);
+	<?php
 
-	$posts_array = get_posts( $args );
+		$args = array('posts_per_page' => 3, 'post_type' => 'slide');
+
+		$posts_array = get_posts( $args );
 
 	?>
 
@@ -16,7 +15,7 @@
 							
 			<?php foreach ($posts_array as $post) { ?>
 
-				<?php 
+				<?php
 
 					$image = get_field('image');
 					$title = get_field('title');

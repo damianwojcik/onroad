@@ -23,7 +23,7 @@
 
 				<nav>
 
-					<?php dynamic_sidebar('main_menu'); ?>
+					<?php dynamic_sidebar('footer_menu'); ?>
 					
 				</nav>
 

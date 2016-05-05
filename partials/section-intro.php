@@ -24,7 +24,7 @@
 
 
 								<!-- BEGIN wrap-photo-large -->
-								<div class="wrap-photo-large">
+								<div class="wrap-photo-large <?php if(empty($photo_small)){ echo "single-photo"; } ?>">
 
 									<div class="photo" style="background-image: url('<?php echo $photo_large['url']; ?>');">
 

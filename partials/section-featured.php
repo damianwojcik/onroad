@@ -7,6 +7,8 @@
 
 				<?php if( have_rows('featured_boxes', 'option') ): ?>
 
+					<?php $i = 1; ?>
+
 					<?php while ( have_rows('featured_boxes', 'option') ) : the_row(); ?>
 
 						<?php 
@@ -23,7 +25,7 @@
 
 									<div class="row">
 
-										<h3><span>01. </span><?php if( !empty($title) ): ?><?php echo $title; ?><?php endif; ?></h3>
+										<h3><span>0<?php echo $i; ?>. </span><?php if( !empty($title) ): ?><?php echo $title; ?><?php endif; ?></h3>
 
 									</div>
 
@@ -64,7 +66,8 @@
 												<?php endif; ?>
 												<!-- END if exist single banner -->
 
-
+												<?php $i++; ?>
+												
 											<?php endwhile; ?>
 
 										</ul>
