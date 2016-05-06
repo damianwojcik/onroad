@@ -1,4 +1,4 @@
-	
+
 	<?php
 
 		$args = array('posts_per_page' => 3, 'post_type' => 'slide');
@@ -12,7 +12,7 @@
 	<section class="slider">
 
 		<div class="owl-carousel">
-							
+
 			<?php foreach ($posts_array as $post) { ?>
 
 				<?php
@@ -21,6 +21,7 @@
 					$title = get_field('title');
 					$subtitle = get_field('subtitle');
 					$button_txt = get_field('button_txt');
+					$button_link = get_field('button_link');
 
 				?>
 
@@ -36,7 +37,7 @@
 								<div class="wrap">
 
 									<div class="inner-wrap">
-										
+
 										<?php if( ( !empty($title) ) or ( ( !empty($subtitle) ) ) ): ?>
 
 											<h1>
@@ -51,7 +52,7 @@
 
 										<?php if( !empty($button_txt) ): ?>
 
-											<a href="#" class="btn btn-transparent"><?php echo $button_txt; ?></a>
+											<a href="<?php echo $button_link; ?>" class="btn btn-transparent"><?php echo $button_txt; ?></a>
 
 										<?php endif; ?>
 

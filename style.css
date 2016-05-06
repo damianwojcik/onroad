@@ -16,14 +16,14 @@ Author URI: http://www.time4.pl
 
 
 /* ---------------------------------------------------------------
-	Basic HTML elements 
+	Basic HTML elements
 --------------------------------------------------------------- */
 *,
 *:before,
 *:after{
     -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -35,8 +35,8 @@ Author URI: http://www.time4.pl
 
 body{
     background: #f5f5f5;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+  	font-family: 'Open Sans', sans-serif;
+  	font-weight: 400;
     font-size: 100%;
 }
 
@@ -44,15 +44,15 @@ a,
 a:visited,
 a:active,
 a:hover,
-button{	
+button{
 	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    color: #f7941e;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: #f7941e;
 }
 
 button{
@@ -181,50 +181,42 @@ blockquote{
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10px; /*size of the border*/
 }
 
 .wrap-photo-large,
 .wrap-photo-small{
     display: inline-block;
     background: #FFF;
+    padding: 10px;
     -webkit-box-shadow: -5px 9px 10px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow:    -5px 9px 10px 0px rgba(0, 0, 0, 0.1);
     box-shadow:         -5px 9px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .wrap-photo-large{
-    width: 670px;
+    width: 85%;
     height: 420px;
     position: relative;
 }
 
-.wrap-photo-large .photo{
-    width: 650px;
-    height: 400px;
-}
-
 .wrap-photo-small{
     height: 200px;
-    width: 330px;
+    width: 50%;
     position: absolute;
     bottom: -80px;
     right: -55px;
 }
 
-.wrap-photo-small .photo{
-    height: 180px;
-    width: 310px;
-}
-
 .wrap-photo-large.single-photo{
     height: 460px;
-    width: 740px;
+    width: 90%;
 }
 
+.wrap-photo-small .photo,
+.wrap-photo-large .photo,
 .wrap-photo-large.single-photo .photo{
-    width: 720px;
-    height: 440px;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -638,9 +630,15 @@ a.more:hover{
     display: none;
 }
 
+.search-panel .wrap{
+  width: 50%;
+  display: table;
+  margin: 0 auto;
+}
+
 .search-panel .searchbox-toggled{
     display: block;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -655,6 +653,7 @@ a.more:hover{
     font-size: 22px;
     height: 70px;
     line-height: 70px;
+    float: left;
 }
 
 .search-panel .searchbox-toggled button{
@@ -1277,12 +1276,17 @@ main section{
     margin-top: 5px;
 }
 
-.news article h3{
+.news article h3,
+.news article h3 a{
     color: #FFF;
     font-size: 18px;
     margin-bottom: 35px;
     height: 65px;
     overflow: hidden;
+}
+
+.news article h3 a:hover{
+    color: #f7941e;
 }
 
 .news article .article-img{
@@ -1804,6 +1808,3 @@ aside ul.deals-listing li span.description{
     width: 45%;
     margin-right: 3%;
 }
-
-
-

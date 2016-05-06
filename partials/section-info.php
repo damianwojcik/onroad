@@ -8,6 +8,7 @@
 			$title = get_sub_field('title');
 			$intro = get_sub_field('intro');
 			$button_txt = get_sub_field('button_txt');
+			$button_link = get_sub_field('button_link');
 
 		?>
 
@@ -123,7 +124,7 @@
 
 								<div class="row">
 
-									<a href="#" class="btn btn-large"><?php echo $button_txt; ?></a>
+									<a href="<?php echo $button_link; ?>" class="btn btn-large"><?php echo $button_txt; ?></a>
 
 								</div>
 
@@ -142,11 +143,11 @@
 
 							<?php while ( have_rows('info-box', 'option') ) : the_row(); ?>
 
-								<?php 
+								<?php
 
 								$title = get_sub_field('title');
 								$image = get_sub_field('image');
-								
+
 								?>
 
 								<div class="info-photobox" style="background-image: url('<?php if( !empty($image) ): ?><?php echo $image['url']; ?><?php endif; ?>');">

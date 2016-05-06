@@ -5,7 +5,11 @@
 
 		<div class="row">
 
-			<?php dynamic_sidebar('search_panel'); ?>
+			<div class="wrap">
+
+					<?php dynamic_sidebar('search_panel'); ?>
+				
+			</div>
 
 		</div>
 

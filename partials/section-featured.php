@@ -1,4 +1,4 @@
-	
+
 	<section class="featured">
 
 		<div class="container">
@@ -11,11 +11,12 @@
 
 					<?php while ( have_rows('featured_boxes', 'option') ) : the_row(); ?>
 
-						<?php 
+						<?php
 
 							$title = get_sub_field('title');
 							$content = get_sub_field('content');
 							$button_txt = get_sub_field('button_txt');
+							$button_link = get_sub_field('button_link');
 
 						?>
 
@@ -41,7 +42,7 @@
 
 												<?php while ( have_rows('banner', 'option') ) : the_row();  ?>
 
-													<?php 
+													<?php
 
 													$logo = get_sub_field('logo');
 													$link = get_sub_field('link');
@@ -67,7 +68,7 @@
 												<!-- END if exist single banner -->
 
 												<?php $i++; ?>
-												
+
 											<?php endwhile; ?>
 
 										</ul>
@@ -98,7 +99,7 @@
 
 										<div class="row">
 
-											<a href="#" class="btn btn-arrow-right"><?php echo $button_txt; ?></a>
+											<a href="<?php echo $button_link; ?>" class="btn btn-arrow-right"><?php echo $button_txt; ?></a>
 
 										</div>
 

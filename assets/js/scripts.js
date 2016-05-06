@@ -28,18 +28,9 @@ jQuery(document).ready(function($){
 
 	}
 
-
-	// function scrollTop_button(){
-	// 	$('.scrollTop').click(function(){
-	// 		$('html, body').animate({scrollTop : 0},800);
-	// 		return false;
-	// 	});
-	// }
-
-
     function mobile_menu_toggle(){
 	    $(".menu-toggle").click(function() {
-	        $(".mobile-navigation").slideToggle(500);
+	        $(".mobile-navigation").stop().slideToggle(500);
 	        $body.toggleClass('menu-open');
 	    });
     }
@@ -47,12 +38,22 @@ jQuery(document).ready(function($){
 
 	function searchbox(){
 
-		$(".searchbox-toggle").click(function() {
-	        $(".search-panel").slideToggle(500);
-	        // $body.toggleClass('menu-open');
+		$(".searchbox-toggle").click(function(e) {
+
+					e.preventDefault();
+	        $(".search-panel").stop().slideToggle(500);
+					$(".searchbox-toggled").find('input').focus();
+
 	    });
+
+		$('.searchbox-toggled input').on('focusout',function(){
+
+			$('.search-panel').removeClass('active');
+			$('.search-panel').stop().slideToggle(500);
+
+		});
 
 	}
 
-	
+
 });

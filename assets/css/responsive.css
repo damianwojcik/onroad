@@ -19,33 +19,15 @@
 	}
 
 	.wrap-photo-large{
-		width: 535px;
 		height: 335px;
 	}
 
-	.wrap-photo-large .photo{
-		width: 515px;
-		height: 315px;
-	}
-
 	.wrap-photo-small{
-		width: 265px;
 		height: 160px;
-	}
-
-	.wrap-photo-small .photo{
-		width: 245px;
-		height: 140px;
 	}
 
 	.wrap-photo-large.single-photo{
 	    height: 460px;
-	    width: 600px;
-	}
-
-	.wrap-photo-large.single-photo .photo{
-	    width: 580px;
-	    height: 440px;
 	}
 
 	.info-wrap{
@@ -419,32 +401,29 @@
 
 	.wrap-photo-large,
 	.wrap-photo-large.single-photo{
-	    width: 670px;
 	    height: 420px;
 	    position: relative;
 	}
 
-	.wrap-photo-large .photo,
-	.wrap-photo-large.single-photo .photo{
-	    width: 650px;
-	    height: 400px;
+	.wrap-photo-large.single-photo{
+			width: 100%;
 	}
 
 	.wrap-photo-small{
 	    height: 200px;
-	    width: 330px;
 	    position: absolute;
 	    bottom: -80px;
 	    right: -30px;
 	}
 
-	.wrap-photo-small .photo{
-	    height: 180px;
-	    width: 310px;
+	.search-panel .wrap{
+		text-align: center;
+		width: 100%;
 	}
 
-	.search-panel .searchbox-toggled{
-		width: 100%;
+	.search-panel .searchbox-toggled input,
+	.search-panel .searchbox-toggled button{
+		float: none;
 	}
 
 
@@ -604,7 +583,7 @@
 		width: 90%;
 		margin: 0 auto;
 	}
-	
+
 	.info .btn{
 		width: 100%;
 	}
@@ -819,28 +798,15 @@
 
 	.wrap-photo-large,
 	.wrap-photo-large.single-photo{
-	    width: 395px;
 	    height: 245px;
 	    position: relative;
 	}
 
-	.wrap-photo-large .photo,
-	.wrap-photo-large.single-photo .photo{
-	    width: 375px;
-	    height: 225px;
-	}
-
 	.wrap-photo-small{
 	    height: 120px;
-	    width: 195px;
 	    position: absolute;
 	    bottom: -50px;
 	    right: -40px;
-	}
-
-	.wrap-photo-small .photo{
-	    height: 100px;
-	    width: 175px;
 	}
 
 
@@ -1033,15 +999,9 @@
 
 	.wrap-photo-large,
 	.wrap-photo-large.single-photo{
-	    width: 275px;
 	    height: 245px;
 	    position: relative;
-	}
-
-	.wrap-photo-large .photo,
-	.wrap-photo-large.single-photo .photo{
-	    width: 255px;
-	    height: 225px;
+			width: 100%;
 	}
 
 	.wrap-photo-small,
@@ -1099,7 +1059,7 @@
 		font-size: 36px;
 		text-align: center;
 	}
-	
+
 
 	/*section intro*/
 	.intro .span8{
@@ -1200,6 +1160,3 @@
 
 
 }
-
-
-
