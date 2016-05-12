@@ -122,12 +122,12 @@
 
 
 	/*section featured*/
-	.featured{
-		margin-top: -80px;
-	}
-
 	.featured .featured-box .wrap{
 		width: 80%;
+	}
+
+	.page-template .featured{
+		margin-top: 70px;
 	}
 
 	/*section intro*/
@@ -530,6 +530,14 @@
 
 
 	/*section featured*/
+	.featured{
+		margin-top: -66px;
+	}
+
+	.featured .featured-box h3{
+		font-size: 26px
+	}
+
 	.featured .featured-box .wrap,
 	.featured .featured-box .btn{
 		width: 75%;
@@ -843,6 +851,15 @@
 		height: 420px;
 	}
 
+	/*section featured*/
+	.featured{
+		margin-top: -64px;
+	}
+
+	.featured .featured-box h3{
+		font-size: 24px
+	}
+
 	.featured .span6{
 		width: 100%;
 		margin-left: 0;
@@ -1084,6 +1101,16 @@
 	.title h1{
 		font-size: 36px;
 		text-align: center;
+	}
+
+
+	/*section featured*/
+	.featured{
+		margin-top: -60px;
+	}
+
+	.featured .featured-box h3{
+		font-size: 20px
 	}
 
 
