@@ -1844,7 +1844,7 @@ ul.article-tiles li a.tile-img-link .tile-img:hover{
 
 ul.article-tiles li span.date{
   color: #8a8a8a;
-  display: inline-block;
+  display: block;
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
@@ -1910,6 +1910,117 @@ ul.article-tiles li ul.article-tags li a{
 ul.article-tiles li ul.article-tags li a:hover{
   color: #3c3c3c;
   background: rgba(0, 0, 0, 0.2);
+}
+
+
+/* ---------------------------------------------------------------
+    category deals-listing
+--------------------------------------------------------------- */
+ul.deals_listing-full{
+  display: table;
+  width: 100%;
+}
+
+ul.deals_listing-full li{
+  display: table;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+ul.deals_listing-full li a.tile-img-link{
+  display: table;
+  width: 35%;
+  overflow: hidden;
+  height: 260px;
+  float: left;
+}
+
+ul.deals_listing-full li a.tile-img-link .tile-img{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: inherit;
+  display: block;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+
+}
+
+ul.deals_listing-full li a.tile-img-link .tile-img:hover{
+  transform:scale(1.2);
+  -webkit-transform:scale(1.2);
+  -moz-transform:scale(1.2);
+  -o-transform:scale(1.2);
+}
+
+ul.deals_listing-full li .wrap{
+  width: calc(65% - 30px);
+  float: left;
+  margin-left: 30px
+}
+
+ul.deals_listing-full li a{
+  color: #3c3c3c;
+}
+
+ul.deals_listing-full li .btn{
+  color: #FFF
+}
+
+ul.deals_listing-full li a:hover{
+  color: #f7941e;
+}
+
+ul.deals_listing-full li h3{
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+ul.deals_listing-full li .wrap span.date{
+  color: #8a8a8a;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+ul.deals_listing-full li .wrap .inner-wrap,
+.single .inner-wrap-deals{
+  display: table;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+ul.deals_listing-full li .wrap span.value,
+.single .inner-wrap-deals span.value{
+  display: table-cell;
+  width: 30%;
+  color: #f7941e;
+  vertical-align: middle;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+}
+
+ul.deals_listing-full li .wrap span.description,
+.single .inner-wrap-deals span.desciption{
+  display: table-cell;
+  width: 70%;
+  font-size: 15px;
+  line-height: 22px;
+  height: 110px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.single .inner-wrap-deals{
+  margin-bottom: 50px;
 }
 
 

@@ -1002,6 +1002,15 @@
 		margin-bottom: 20px;
 	}
 
+	ul.deals_listing-full li a.tile-img-link{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	ul.deals_listing-full li .wrap{
+		width: 100%;
+		margin: 0;
+	}
 
 }
 
@@ -1175,5 +1184,14 @@
 		width: 100%;
 	}
 
+	ul.deals_listing-full li .wrap span.value,
+	.single .inner-wrap-deals span.value{
+		font-size: 30px;
+	}
+
+	ul.deals_listing-full li .wrap span.description,
+	.single .inner-wrap-deals span.description{
+		font-size: 14px;
+	}
 
 }

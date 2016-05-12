@@ -59,6 +59,23 @@
 									<!-- content -->
 									<?php the_content(); ?>
 
+									<?php if($category_id == 4){ ?>
+
+										<?php
+											$value = get_field('value');
+											$description = get_field('description');
+										?>
+
+										<div class="inner-wrap-deals">
+
+											<span class="value"><?php echo $value; ?></span>
+
+											<span class="description"><?php echo $description; ?></span>
+
+										</div>
+
+									<?php }?>
+
 
 								<?php endwhile; endif; ?>
 
