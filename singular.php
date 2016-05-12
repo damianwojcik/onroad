@@ -43,7 +43,7 @@
 
 								?>
 
-									<?php if( !empty($title) ): ?>
+									<?php if( !empty($title) & is_single() ): ?>
 
 										<h2><?php echo $title; ?></h3>
 
@@ -79,7 +79,11 @@
 
 								<?php endwhile; endif; ?>
 
-								<a href="<?php echo $category_link; ?>" class="btn btn-transparent btn-back">Wróć</a>
+								<?php if( is_single() ){ ?>
+
+									<a href="<?php echo $category_link; ?>" class="btn btn-transparent btn-back">Wróć</a>
+
+								<?php } ?>
 
 							</article>
 

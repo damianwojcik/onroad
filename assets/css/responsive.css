@@ -258,7 +258,7 @@
 	}
 
 	.content article h2{
-		font-size: 32px;
+		font-size: 34px;
 	}
 
 	.content article .btn{
@@ -496,7 +496,7 @@
 
 	.slider .slide:before,
 	.title:before{
-		opacity: 0.55;
+		opacity: 0.5;
 	}
 
 	.slider .slide:after{
@@ -676,7 +676,7 @@
 	}
 
 	.content article h2{
-		font-size: 26px;
+		font-size: 30px;
 		margin-bottom: 30px;
 	}
 
@@ -1175,7 +1175,7 @@
 
 	/*content*/
 	.content article h2{
-		font-size: 22px;
+		font-size: 28px;
 	}
 
 
