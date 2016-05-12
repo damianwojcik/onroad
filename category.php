@@ -1,9 +1,8 @@
 <?php get_header(); ?>
 
 <?php
-	$categories = get_the_category();
-	$category_id = $categories[0]->cat_ID;
-	$category_link = get_category_link( $category_id );
+  $categories = get_the_category();
+  $category_id = $categories[0]->cat_ID;
 ?>
 
 <!-- =================================================
@@ -34,35 +33,19 @@
 							================================================== -->
 							<article>
 
-								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <!-- partial for articles -->
 
-								<?php
+                <?php if($category_id == 2){ ?>
 
-									$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
-									$title = get_the_title();
+    							<?php get_template_part("partials/article", "tile-loop"); ?>
 
-								?>
+    						<?php } else { ?>
 
-									<?php if( !empty($title) ): ?>
+    							<?php get_template_part("partials/module", "boxes"); ?>
 
-										<h2><?php echo $title; ?></h3>
+    						<?php } ?>
 
-									<?php endif; ?>
-
-
-									<?php if( !empty($thumbnail) ): ?>
-
-										<div class="full-width-wrapper" style="background-image: url(<?php echo $thumbnail[0]; ?>);"></div>
-
-									<?php endif; ?>
-
-									<!-- content -->
-									<?php the_content(); ?>
-
-
-								<?php endwhile; endif; ?>
-
-								<a href="<?php echo $category_link; ?>" class="btn btn-transparent btn-back">Wróć</a>
+								<a href="<?= SITE_URL; ?>" class="btn btn-transparent-small">Pokaż więcej</a>
 
 							</article>
 
