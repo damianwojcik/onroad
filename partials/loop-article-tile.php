@@ -1,3 +1,5 @@
+<h2>Lista artykułów</h2>
+
 <ul class="article-tiles">
 
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

@@ -37,7 +37,7 @@
 
                 <?php if($category_id == 2){ ?>
 
-    							<?php get_template_part("partials/article", "tile-loop"); ?>
+    							<?php get_template_part("partials/loop", "article-tile"); ?>
 
     						<?php } else { ?>
 
