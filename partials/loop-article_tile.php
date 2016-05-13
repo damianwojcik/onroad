@@ -17,9 +17,15 @@
 
     <li>
 
-      <a href="<?php the_permalink(); ?>" class="tile-img-link">
-        <div class="tile-img" style="background-image: url(<?php echo $thumbnail[0]; ?>)"></div>
-      </a>
+      <?php if( !empty($thumbnail) ): ?>
+
+        <a href="<?php the_permalink(); ?>" class="tile-img-link">
+
+          <div class="tile-img" style="background-image: url(<?php echo $thumbnail[0]; ?>)"></div>
+          
+        </a>
+
+      <?php endif; ?>
 
       <span class="date"><?php echo $day; ?>, <?php echo get_the_date('Y-m-d'); ?></span>
 

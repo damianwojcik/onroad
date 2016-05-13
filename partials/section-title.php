@@ -1,3 +1,7 @@
+<?php
+	$categories = get_the_category();
+	$category_name = str_replace('"', "", $categories[0]->name);
+?>
 
 	<section class="title" style="background-image:url('<?= THEME_URL; ?>/assets/img/title-bg.jpg');">
 
@@ -9,15 +13,19 @@
 
 					<h1>
 
-						<?php if( is_category() or is_tag() ){ ?>
+						<?php
 
-							<?php echo single_cat_title(); ?>
+							if (is_category()) {
+							  single_cat_title();
+							} elseif (is_single()) {
+							  echo $category_name;
+							} elseif (is_tag()) {
+								single_tag_title('Tag: ');
+							} else {
+							  the_title();
+							}
 
-						<?php }else{ ?>
-
-							<?php the_title(); ?>
-
-						<?php } ?>
+						?>
 
 					</h1>
 
