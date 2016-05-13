@@ -1348,7 +1348,7 @@ main section{
     color: #f7941e;
 }
 
-.news article .article-img{
+.news article .tile-img-link{
     height: 140px;
     width: 100%;
     background-size: cover;

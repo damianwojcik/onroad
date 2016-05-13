@@ -59,7 +59,11 @@
 
 							<div class="row">
 
-								<div class="article-img" style="background-image: url(<?php echo $thumbnail[0]; ?>);"></div>
+								<a href="<?php the_permalink(); ?>" class="tile-img-link">
+
+									<div class="tile-img" style="background-image: url(<?php echo $thumbnail[0]; ?>)"></div>
+
+								</a>
 
 								<h3><a href="<?php the_permalink(); ?>"><?php echo $title; ?></a></h3>
 
