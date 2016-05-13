@@ -45,7 +45,7 @@
 
 									<?php if( !empty($title) & is_single() ): ?>
 
-										<h2><?php echo $title; ?></h3>
+										<h2><?php echo $title; ?></h2> <br />
 
 									<?php endif; ?>
 
@@ -96,31 +96,12 @@
 			</div>
 			<!-- END span8 main -->
 
-			<div class="span4 aside">
 
-				<aside>
+			<!-- =================================================
+				aside
+			================================================== -->
+			<?php get_template_part("partials/aside"); ?>
 
-					<div class="container">
-
-						<!-- =================================================
-							aside related_articles
-						================================================== -->
-						<?php get_template_part("partials/aside", "recent_articles"); ?>
-
-
-						<!-- =================================================
-							aside deals_listing
-						================================================== -->
-						<?php get_template_part("partials/aside", "deals_listing"); ?>
-
-
-					</div>
-					<!-- END container -->
-
-				</aside>
-
-			</div>
-			<!-- END span4 aside -->
 
 		</div>
 

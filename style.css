@@ -1601,9 +1601,9 @@ footer .span2 p a:hover{
     padding-right: 50px;
 }
 
-.content article h2{
+/*.content article h2{
     margin-bottom: 45px;
-}
+}*/
 
 .content article p{
     font-size: 16px;
@@ -2003,17 +2003,23 @@ ul.deals_listing-full li .wrap span.value,
   font-size: 38px;
   font-weight: 700;
   text-align: center;
+  background: rgba(0, 0, 0, 0.05);
 }
 
 ul.deals_listing-full li .wrap span.description,
-.single .inner-wrap-deals span.desciption{
+.single .inner-wrap-deals span.description{
   display: table-cell;
+  padding-left: 30px;
   width: 70%;
   font-size: 15px;
   line-height: 22px;
   height: 110px;
   overflow: hidden;
   vertical-align: middle;
+}
+
+.single .inner-wrap-deals span.description{
+  font-size: 16px;
 }
 
 .single .inner-wrap-deals{

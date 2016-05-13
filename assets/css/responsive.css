@@ -257,10 +257,6 @@
 		padding-right: 0;
 	}
 
-	.content article h2{
-		font-size: 34px;
-	}
-
 	.content article .btn{
 		margin-bottom: 20px;
 	}
@@ -681,11 +677,6 @@
 
 	.content article{
 		padding-right: 0;
-	}
-
-	.content article h2{
-		font-size: 30px;
-		margin-bottom: 30px;
 	}
 
 	.content article blockquote.align-left{
@@ -1200,10 +1191,8 @@
 	}
 
 
-	/*content*/
-	.content article h2{
-		font-size: 28px;
-	}
+
+
 
 
 	/*info-page*/
