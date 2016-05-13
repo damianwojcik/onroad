@@ -33,21 +33,9 @@
 							================================================== -->
 							<article>
 
-                <!-- partial for articles -->
+                <!-- article tile loop -->
+    						<?php get_template_part("partials/loop", "article_tile"); ?>
 
-                <?php if($category_id == 2){ ?>
-
-    							<?php get_template_part("partials/loop", "article_tile"); ?>
-
-    						<?php } elseif($category_id == 4){ ?>
-
-    							<?php get_template_part("partials/loop", "deals_listing"); ?>
-
-    						<?php } else{ ?>
-
-                  <h2>Ta kategoria nie posiada jeszcze strony archiwum.</h2>
-
-                <?php } ?>
 
 								<a href="<?= SITE_URL; ?>" class="btn btn-transparent-small">Pokaż więcej</a>
 

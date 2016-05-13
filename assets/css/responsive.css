@@ -416,16 +416,6 @@
 	    right: -30px;
 	}
 
-	.search-panel .wrap{
-		text-align: center;
-		width: 100%;
-	}
-
-	.search-panel .searchbox-toggled input,
-	.search-panel .searchbox-toggled button{
-		float: none;
-	}
-
 
 	/*navigation*/
 	.navigation .container{
@@ -1051,13 +1041,12 @@
 		margin-bottom: 15px;
 	}
 
-	.search-panel .searchbox-toggled input, .search-panel .searchbox-toggled button{
-		font-size: 15px;
+	.search-panel .wrap{
+		width: 100%;
 	}
 
-	.search-panel .searchbox-toggled button{
-		padding: 17px 0 0 0;
-		width: 45px;
+	#searchform input{
+		font-size: 16px;
 	}
 
 

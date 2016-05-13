@@ -6,6 +6,10 @@ jQuery(document).ready(function($){
 	searchbox();
 
 
+	//add placeholder to wp searchform
+	$(document).find('#searchform input').attr('placeholder', 'Wpisz wyszukiwaną frazę...');
+
+
 	var $body = $('body'),
 		$wind = $(window),
 		windW = $wind.width(),

@@ -253,7 +253,6 @@ a.tile-img-link .tile-img:hover{
 
 /*info-photobox*/
 .info-photobox{
-    cursor: pointer;
     text-align: center;
     display: table;
     width: 100%;
@@ -580,18 +579,6 @@ input[type="submit"]:hover{
     color: #FFF;
 }
 
-
-a.arrow-right,
-a.arrow-right:hover{
-    display: inline-block;
-    background-image: url('assets/img/icons/arrow-right-white-medium.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 13px;
-    width: 20px;
-}
-
 a.more,
 a.more:hover{
     color: #f7941e;
@@ -614,6 +601,16 @@ a.more:after{
 
 a.more:hover{
     color: #FFF;
+}
+
+.arrow-right{
+    display: inline-block;
+    background-image: url('assets/img/icons/arrow-right-white-medium.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 13px;
+    width: 20px;
 }
 
 
@@ -671,23 +668,29 @@ a.more:hover{
 }
 
 .search-panel .wrap{
-  width: 50%;
+  width: 370px;
   display: table;
   margin: 0 auto;
 }
 
-.search-panel .searchbox-toggled{
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+#searchform{
+  display: table;
+  width: 100%
 }
 
-.search-panel .searchbox-toggled input,
-.search-panel .searchbox-toggled button{
+#searchform .screen-reader-text{
+  display: none;
+}
+
+#searchform label{
+  display: none;
+}
+
+#searchform input{
     margin: 0;
     background: transparent;
     border: 0;
+    box-shadow: none;
     outline: none;
     color: #bebebe;
     font-size: 22px;
@@ -696,7 +699,11 @@ a.more:hover{
     float: left;
 }
 
-.search-panel .searchbox-toggled button{
+#searchform input[type="text"]{
+  width: calc(100% - 70px);
+}
+
+#searchform input[type="submit"]{
     background-color: #303030;
     background-image: url('assets/img/icons/arrow-right-white.png');
     background-position: center;
@@ -705,11 +712,32 @@ a.more:hover{
     height: 70px;
     width: 70px;
     opacity: 0.8;
+    text-indent: -9999px;
     padding: 15px 10px 0 10px;
 }
 
-.search-panel .searchbox-toggled button:hover{
+#searchform button:hover{
     opacity: 1;
+}
+
+#searchform input:focus{
+		margin-bottom: 0;
+		border: 0;
+		box-shadow: none;
+	}
+
+/* placeholder color*/
+#searchform input::-webkit-input-placeholder {
+   color: #bebebe;
+}
+#searchform input:-moz-placeholder { /* Firefox 18- */
+   color: #bebebe;
+}
+#searchform input::-moz-placeholder {  /* Firefox 19+ */
+   color: #bebebe;
+}
+#searchform input:-ms-input-placeholder {
+   color: #bebebe;
 }
 
 

@@ -147,10 +147,11 @@
 
 								$title = get_sub_field('title');
 								$image = get_sub_field('image');
+								$link = get_sub_field('link');
 
 								?>
 
-								<div class="info-photobox" style="background-image: url('<?php if( !empty($image) ): ?><?php echo $image['url']; ?><?php endif; ?>');">
+								<a href="<?php echo $link; ?>" class="info-photobox" style="background-image: url('<?php if( !empty($image) ): ?><?php echo $image['url']; ?><?php endif; ?>');">
 
 									<div class="info-photobox-wrap">
 
@@ -164,11 +165,11 @@
 
 										</h3>
 
-										<a href="#" class="arrow-right"></a>
+										<div class="arrow-right"></div>
 
 									</div>
 
-								</div>
+								</a>
 								<!-- END info-photo-box -->
 
 							<?php endwhile; ?>

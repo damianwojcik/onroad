@@ -1,4 +1,8 @@
-<h2>Lista artykułów</h2> <br />
+<?php if (is_search()) { ?>
+  <h2>Wyniki wyszukiwania</h2> <br />
+<?php }else{?>
+  <h2>Lista artykułów</h2> <br />
+<?php } ?>
 
 <ul class="article-tiles">
 

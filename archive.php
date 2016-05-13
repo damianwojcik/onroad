@@ -67,7 +67,7 @@
         aside
       ================================================== -->
       <?php get_template_part("partials/aside"); ?>
-      
+
 
 			</div>
 			<!-- END span4 aside -->
