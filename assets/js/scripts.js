@@ -39,23 +39,34 @@ jQuery(document).ready(function($){
 	    });
     }
 
-	// ...
-	// ...todo
-	// ...
+
+	// remove console.log after fix
 	function searchbox(){
 
-		$(".searchbox-toggle").click(function(e) {
+		var $toggle = 0;
+		console.log($toggle);
 
-					e.preventDefault();
-	        $(".search-panel").stop().slideToggle(500);
-					$(".searchbox-toggled").find('input').focus();
+		$(".searchbox-toggle").click(function() {
+
+			if($toggle == 0){
+	      $(".search-panel").stop().slideToggle(500);
+				$("#searchform").find('input#s').focus();
+				$toggle = 1;
+			}else{
+				$("#searchform").find('input#s').focusout();
+				$toggle = 0;
+			}
+
+			console.log($toggle);
 
 	    });
 
-		$('.searchbox-toggled input').on('focusout',function(){
+		$('#searchform input#s').on('focusout',function(){
 
 			$('.search-panel').removeClass('active');
 			$('.search-panel').stop().slideToggle(500);
+			$toggle = 0;
+			console.log($toggle);
 
 		});
 

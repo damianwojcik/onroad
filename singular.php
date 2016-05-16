@@ -43,14 +43,14 @@
 
 								?>
 
-									<?php if( !empty($title) & is_single() ): ?>
+									<?php if( !empty($title) && is_single() ): ?>
 
 										<h2><?php echo $title; ?></h2> <br />
 
 									<?php endif; ?>
 
 
-									<?php if( !empty($thumbnail) ): ?>
+									<?php if( !empty($thumbnail) && is_single() ): ?>
 
 										<div class="full-width-wrapper" style="background-image: url(<?php echo $thumbnail[0]; ?>);"></div>
 
