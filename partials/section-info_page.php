@@ -8,6 +8,7 @@
 		$title = get_sub_field('title');
 		$intro = get_sub_field('intro');
 		$button_txt = get_sub_field('button_txt');
+		$button_link = get_sub_field('button_link');
 
 	?>
 
@@ -39,7 +40,7 @@
 
 						<?php if(!empty($button_txt)){ ?>
 
-							<a href="#" class="btn btn-transparent-orange"><?php echo $button_txt; ?></a>
+							<a href="<?php echo $button_link; ?>" class="btn btn-transparent-orange"><?php echo $button_txt; ?></a>
 
 						<?php } ?>
 

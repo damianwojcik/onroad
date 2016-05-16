@@ -38,6 +38,7 @@
 	.info-heading h3{
 		font-size: 20px;
 		line-height: 24px;
+		margin-top: -12px;
 	}
 
 	.info-heading h3 small{
@@ -1049,6 +1050,11 @@
 		font-size: 16px;
 	}
 
+	.nav-next .btn.btn-transparent-small,
+	.nav-previous .btn.btn-transparent-small{
+		font-size: 12px;
+	}
+
 
 	/*section navigation*/
 	.navigation .span1{
@@ -1180,10 +1186,6 @@
 	}
 
 
-
-
-
-
 	/*info-page*/
 	.info-page .btn, .info-page .btn:hover{
 		width: 100%;
@@ -1198,5 +1200,6 @@
 	.single .inner-wrap-deals span.description{
 		font-size: 14px;
 	}
+
 
 }

@@ -39,7 +39,9 @@ jQuery(document).ready(function($){
 	    });
     }
 
-
+	// ...
+	// ...todo
+	// ...
 	function searchbox(){
 
 		$(".searchbox-toggle").click(function(e) {

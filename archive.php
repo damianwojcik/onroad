@@ -49,8 +49,6 @@
 
                 <?php } ?>
 
-								<a href="<?= SITE_URL; ?>" class="btn btn-transparent-small">Pokaż więcej</a>
-
 							</article>
 
 						</div>

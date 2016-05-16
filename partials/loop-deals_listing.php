@@ -2,7 +2,9 @@
 
 <ul class="deals_listing-full">
 
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  <?php if ( have_posts() ) : ?>
+
+    <?php while ( have_posts() ) : the_post();  ?>
 
     <?php
 
@@ -43,6 +45,15 @@
 
     </li>
 
-  <?php endwhile; endif; ?>
+  <?php endwhile; ?>
 
 </ul>
+
+<div class="nav-previous alignleft"><?php next_posts_link( 'Poprzednie' ); ?></div>
+<div class="nav-next alignright"><?php previous_posts_link( 'Następne' ); ?></div>
+
+<?php else : ?>
+
+  <p><?php _e('Przepraszamy, niestety nie znaleziono żadnych wpisów spełniających Twoje kryteria.'); ?></p>
+
+<?php endif; ?>
