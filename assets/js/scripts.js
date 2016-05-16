@@ -44,7 +44,7 @@ jQuery(document).ready(function($){
 	function searchbox(){
 
 		var $toggle = 0;
-		console.log($toggle);
+		// console.log($toggle);
 
 		$(".searchbox-toggle").click(function() {
 
@@ -57,7 +57,7 @@ jQuery(document).ready(function($){
 				$toggle = 0;
 			}
 
-			console.log($toggle);
+			// console.log($toggle);
 
 	    });
 
@@ -66,7 +66,7 @@ jQuery(document).ready(function($){
 			$('.search-panel').removeClass('active');
 			$('.search-panel').stop().slideToggle(500);
 			$toggle = 0;
-			console.log($toggle);
+			// console.log($toggle);
 
 		});
 
