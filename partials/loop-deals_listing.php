@@ -1,4 +1,4 @@
-<h2>Lista promocji</h2>
+<h2>Lista promocji</h2> <br />
 
 <ul class="deals_listing-full">
 
@@ -21,7 +21,18 @@
     <li>
 
       <a href="<?php the_permalink(); ?>" class="tile-img-link">
-        <div class="tile-img" style="background-image: url(<?php echo $thumbnail[0]; ?>)"></div>
+
+        <div class="tile-img"<?php if( !empty($thumbnail) ){ ?> style="background-image: url(<?php echo $thumbnail[0]; ?>)" <?php } ?>>
+
+          <?php if( empty($thumbnail) ){ ?>
+
+            <div class="image-placeholder">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </div>
+
+          <?php } ?>
+        </div>
+
       </a>
 
       <div class="wrap">

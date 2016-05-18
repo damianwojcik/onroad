@@ -61,9 +61,18 @@
 
 								<a href="<?php the_permalink(); ?>" class="tile-img-link">
 
-									<div class="tile-img" style="background-image: url(<?php echo $thumbnail[0]; ?>)"></div>
+				          <div class="tile-img"<?php if( !empty($thumbnail) ){ ?> style="background-image: url(<?php echo $thumbnail[0]; ?>)" <?php } ?>>
 
-								</a>
+				            <?php if( empty($thumbnail) ){ ?>
+
+				              <div class="image-placeholder">
+				                <i class="fa fa-picture-o" aria-hidden="true"></i>
+				              </div>
+
+				            <?php } ?>
+				          </div>
+
+				        </a>
 
 								<h3><a href="<?php the_permalink(); ?>"><?php echo $title; ?></a></h3>
 

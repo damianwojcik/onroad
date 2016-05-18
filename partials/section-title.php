@@ -21,7 +21,7 @@
 							  echo $category_name;
 							} elseif (is_search()) {
 								echo 'Szukaj';
-							}elseif (is_tag()) {
+							} elseif (is_tag()) {
 								single_tag_title('Tag: ');
 							} else {
 							  the_title();

@@ -159,6 +159,41 @@ blockquote{
 }
 
 
+/*image placeholder*/
+.image-placeholder{
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.image-placeholder:hover{
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.image-placeholder i{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 55px;
+  color: #FFF;
+}
+
+section.news .image-placeholder{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+section.news .image-placeholder:hover{
+  background: rgba(255, 255, 255, 0.25);
+}
+
+
 /*breadcrumbs*/
 .breadcrumbs-wrap{
     display: table;
@@ -1633,10 +1668,6 @@ footer .span2 p a:hover{
     padding-right: 50px;
 }
 
-/*.content article h2{
-    margin-bottom: 45px;
-}*/
-
 .content article p{
     font-size: 16px;
     line-height: 30px;
@@ -1657,6 +1688,19 @@ footer .span2 p a:hover{
 .content article blockquote.align-left{
     width: 46%;
     margin-left: 2%;
+}
+
+.content article .btn{
+  margin-top: 30px;
+}
+
+.single-post .content article ul{
+  list-style: inside;
+  margin-bottom: 20px;
+}
+
+.single-post .content article ul li{
+  margin-bottom: 7px;
 }
 
 
@@ -1847,8 +1891,10 @@ aside ul.deals-listing li span.description{
 }
 
 .page-template-page-services .info-page{
-  padding: 100px 0 70px 0;
+  padding: 70px 0 70px 0;
+  margin-top: 0;
 }
+
 
 /* ---------------------------------------------------------------
     category articles

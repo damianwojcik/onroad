@@ -23,15 +23,20 @@
 
     <li>
 
-      <?php if( !empty($thumbnail) ): ?>
-
         <a href="<?php the_permalink(); ?>" class="tile-img-link">
 
-          <div class="tile-img" style="background-image: url(<?php echo $thumbnail[0]; ?>)"></div>
+          <div class="tile-img"<?php if( !empty($thumbnail) ){ ?> style="background-image: url(<?php echo $thumbnail[0]; ?>)" <?php } ?>>
+
+            <?php if( empty($thumbnail) ){ ?>
+
+              <div class="image-placeholder">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>
+              </div>
+
+            <?php } ?>
+          </div>
 
         </a>
-
-      <?php endif; ?>
 
       <span class="date"><?php echo $day; ?>, <?php echo get_the_date('Y-m-d'); ?></span>
 
