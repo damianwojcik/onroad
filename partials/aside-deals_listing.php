@@ -1,4 +1,4 @@
-	
+
 	<?php
 
 		$args = array('posts_per_page' => 5, 'category' => '4');
@@ -11,7 +11,7 @@
 
 
 	<div class="row">
-		
+
 		<h3>Aktualne promocje</h3>
 
 		<ul class="deals-listing">
@@ -22,12 +22,15 @@
 
 					$value = get_field('value');
 					$description = get_field('description');
+					$trimmed_description = wp_trim_words( $description, 20 );
 
 				?>
 
 				<li>
-					<span class="value"><?php echo $value; ?></span>
-					<span class="description"><?php echo $description; ?></span>
+					<a href="<?php the_permalink(); ?>">
+						<span class="value"><?php echo $value; ?></span>
+						<span class="description"><?php echo $trimmed_description; ?></span>
+					</a>
 				</li>
 
 			<?php } // END foreach ?>

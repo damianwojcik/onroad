@@ -31,15 +31,13 @@
 							<!-- =================================================
 								article/page content
 							================================================== -->
-							<article>
-
+							<div class="wrapper">
+                
                 <!-- article tile loop -->
     						<?php get_template_part("partials/loop", "article_tile"); ?>
 
 
-								<a href="<?= SITE_URL; ?>" class="btn btn-transparent-small">Pokaż więcej</a>
-
-							</article>
+							</div>
 
 						</div>
 

@@ -13,8 +13,8 @@
       $day = get_the_date('l');
       $date = get_the_date('M');
       $value = get_field('value');
-      $description = get_field('description');
-      $trimmed_description = wp_trim_words( $description, 25 );
+      $content = get_field('description');
+      $trimmed_content = wp_trim_words( $content, 20 );
 
     ?>
 
@@ -31,6 +31,7 @@
             </div>
 
           <?php } ?>
+
         </div>
 
       </a>
@@ -45,7 +46,7 @@
 
           <span class="value"><?php echo $value; ?></span>
 
-          <span class="description"><?php echo $trimmed_description; ?></span>
+          <span class="description"><?php echo $trimmed_content; ?></span>
 
         </div>
 

@@ -182,7 +182,7 @@ blockquote{
   display: table-cell;
   vertical-align: middle;
   font-size: 55px;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 section.news .image-placeholder{
@@ -191,6 +191,10 @@ section.news .image-placeholder{
 
 section.news .image-placeholder:hover{
   background: rgba(255, 255, 255, 0.25);
+}
+
+section.news .image-placeholder i{
+  color: rgba(255, 255, 255, 0.2);
 }
 
 
@@ -1144,6 +1148,11 @@ main section{
     padding-bottom: 85px;
 }
 
+main .wrapper,
+.content article{
+  padding-right: 50px;
+}
+
 
 /* ---------------------------------------------------------------
     section fetured
@@ -1605,6 +1614,7 @@ footer .span2 p a:hover{
 
 .title h1{
     display: table-cell;
+    padding-bottom: 20px;
     vertical-align: middle;
     color: #FFF;
     font-size: 48px;
@@ -1664,10 +1674,6 @@ footer .span2 p a:hover{
     width: 100%;
 }
 
-.content article{
-    padding-right: 50px;
-}
-
 .content article p{
     font-size: 16px;
     line-height: 30px;
@@ -1690,7 +1696,7 @@ footer .span2 p a:hover{
     margin-left: 2%;
 }
 
-.content article .btn{
+.single-post .content article .btn{
   margin-top: 30px;
 }
 
@@ -1773,8 +1779,8 @@ aside ul.deals-listing{
 aside ul li{
     display: table;
     width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     padding: 25px 0;
-    border-bottom: 1px solid #eaeaea;
 }
 
 aside ul.recent-articles li .tile-img-link{
@@ -1795,6 +1801,20 @@ aside ul.deals-listing{
     padding-top: 0;
 }
 
+aside ul.deals-listing li{
+  padding: 0;
+}
+
+aside ul.deals-listing li a{
+  display: table;
+  width: 100%;
+  padding: 25px 0;
+}
+
+aside ul.deals-listing li a:hover{
+  background: rgba(0, 0, 0, 0.05);
+}
+
 aside ul.deals-listing li span.value{
     display: block;
     font-size: 36px;
@@ -1813,6 +1833,10 @@ aside ul.deals-listing li span.description{
     color: #8a8a8a;
     font-size: 14px;
     line-height: 22px;
+}
+
+.description a{
+  display: inline-block;
 }
 
 
@@ -2093,7 +2117,7 @@ ul.deals_listing-full li .wrap span.description,
   line-height: 22px;
   height: 110px;
   overflow: hidden;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .single .inner-wrap-deals span.description{

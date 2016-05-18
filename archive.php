@@ -31,7 +31,7 @@
 							<!-- =================================================
 								article/page content
 							================================================== -->
-							<article>
+							<div class="wrapper">
 
                 <!-- partial for articles -->
 
@@ -49,7 +49,7 @@
 
                 <?php } ?>
 
-							</article>
+							</div>
 
 						</div>
 

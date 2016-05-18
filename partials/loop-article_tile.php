@@ -16,7 +16,11 @@
       $title = get_the_title();
       $day = get_the_date('l');
       $date = get_the_date('M');
-      $content = get_the_content();
+      if( get_field('description') ) {
+        $content = get_field('description');
+      }else{
+        $content = get_the_content();
+      };
       $trimmed_content = wp_trim_words( $content, 15 );
 
     ?>
