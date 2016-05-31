@@ -6,7 +6,6 @@
 		<?php
 
 			$title = get_sub_field('title');
-			$intro = get_sub_field('intro');
 			$button_txt = get_sub_field('button_txt');
 			$button_link = get_sub_field('button_link');
 
@@ -28,15 +27,6 @@
 								<h2>
 									<?php echo $title; ?>
 								</h2>
-
-							<?php endif; ?>
-
-
-							<?php if( !empty($intro) ): ?>
-
-								<p>
-									<?php echo $intro; ?>
-								</p>
 
 							<?php endif; ?>
 
