@@ -22,7 +22,7 @@
 								$image = get_sub_field('image');
 								$link = get_sub_field('link');
 
-								if( empty($link) ){ $link = '#'; } 
+								if( empty($link) ){ $link = '#'; }
 
 								?>
 
