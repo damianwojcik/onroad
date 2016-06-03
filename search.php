@@ -32,8 +32,8 @@
 								article/page content
 							================================================== -->
 							<div class="wrapper">
-                
-                <!-- article tile loop -->
+
+                            <!-- article tile loop -->
     						<?php get_template_part("partials/loop", "article_tile"); ?>
 
 

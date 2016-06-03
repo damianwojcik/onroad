@@ -50,7 +50,11 @@
         <?php echo $trimmed_content; ?>
       </p>
 
-      <?php the_tags( '<ul class="article-tags"><li>', '</li><li>', '</li></ul>' ); ?>
+      <div class="tags-wrap">
+
+          <?php the_tags( '<ul class="article-tags"><li>', '</li><li>', '</li></ul>' ); ?>
+
+      </div>
 
       <a href="<?php the_permalink(); ?>" class="btn btn-arrow-right">Więcej</a>
 

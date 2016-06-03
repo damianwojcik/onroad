@@ -1635,6 +1635,11 @@ footer .span2 p a:hover{
     height: 375px;
 }
 
+.page-template-page-services .title h1{
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+
 .title h1{
     display: table-cell;
     padding-bottom: 20px;
@@ -2000,6 +2005,13 @@ ul.article-tiles li p{
   font-size: 15px;
   line-height: 22px;
   margin-bottom: 20px;
+  min-height: 70px;
+}
+
+.tags-wrap{
+    display: block;
+    width: 100%;
+    min-height: 55px;
 }
 
 ul.article-tiles li ul.article-tags{
