@@ -789,14 +789,12 @@
 		height: auto;
 	}
 
-	.banners ul li{
+    .banners ul li{
 		width: 33.3%;
-		height: 120px;
-		line-height: 120px;
 	}
 
-	.banners ul li img{
-		width: 90%;
+	.banners ul li .banner-img{
+		height: 120px;
 	}
 
 
@@ -1249,11 +1247,14 @@
 		font-size: 28px;
 	}
 
-	/*banners*/
-	.banners ul li{
+    /*banners*/
+	.banners ul li .banner-img{
 		height: 100px;
-		line-height: 100px;
 	}
+
+	.banners ul li{
+		width: 50%;
+    }
 
 	.banners ul li img{
 		width: 80%;

@@ -15,26 +15,32 @@
 
 							<?php if( have_rows('banner', 'option') ): ?>
 
+								<?php $i = 1; ?>
+
 								<?php while ( have_rows('banner', 'option') ) : the_row(); ?>
 
 								<?php
 
 								$image = get_sub_field('image');
+								$image_bw = get_sub_field('image_bw');
 								$link = get_sub_field('link');
+
 
 								if( empty($link) ){ $link = '#'; }
 
 								?>
 
-									<li>
+									<li id="banner-<?php echo $i; ?>">
 
 										<a href="<?php if( !empty($link) ): ?><?php echo $link; ?><?php endif; ?>">
 
-											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+											<div class="banner-img"></div>
 
 										</a>
 
 									</li>
+
+									<?php $i = $i + 1; ?>
 
 								<?php endwhile; ?>
 
