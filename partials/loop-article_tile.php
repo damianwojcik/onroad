@@ -1,7 +1,7 @@
 <?php if (is_search()) { ?>
   <h2>Wyniki wyszukiwania</h2> <br />
 <?php }else{?>
-  <h2>Lista artykuĹĂłw</h2> <br />
+  <h2>Lista artykułów</h2> <br />
 <?php } ?>
 
 <ul class="article-tiles">
@@ -29,7 +29,11 @@
 
         <a href="<?php the_permalink(); ?>" class="tile-img-link">
 
-          <div class="tile-img"<?php if( !empty($thumbnail) ){ ?> style="background-image: url(<?php echo $thumbnail[0]; ?>)" <?php } ?>>
+          <div class="tile-img
+            <?php if( get_field('checkbox') ) {
+                echo 'thumb-symbol';
+            }
+          ?>"<?php if( !empty($thumbnail) ){ ?> style="background-image: url(<?php echo $thumbnail[0]; ?>)" <?php } ?>>
 
             <?php if( empty($thumbnail) ){ ?>
 
