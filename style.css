@@ -1450,31 +1450,23 @@ main .wrapper,
     background: #FFF;
 }
 
-.banners ul{
-    list-style-type: none;
-    display: table;
-    width: 100%;
-    margin: auto;
-}
-
-.banners ul li{
-    display: table;
-    vertical-align: middle;
-    text-align: center;
-    width: 16.6%;
+.banners .owl-item{
     float: left;
-    line-height: 150px;
+    min-height: 1px;
 }
 
-.banners ul li a{
+.banners .owl-item a{
     display: table;
+    float: left;
+    height: 150px;
+    table-layout: fixed;
     vertical-align: middle;
     width: 100%;
     padding: 0;
 }
 
 
-.banners ul li .banner-img{
+.banners .owl-item .banner-img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -1482,8 +1474,8 @@ main .wrapper,
     height: 150px;
 }
 
-.banners ul li .banner-img{
-    opacity: 0.5;
+.banners .owl-item .banner-img{
+    opacity: 0.7;
     -webkit-transition: opacity 0.4s ease-in-out;
     -moz-transition: opacity 0.4s ease-in-out;
     -ms-transition: opacity 0.4s ease-in-out;
@@ -1491,56 +1483,8 @@ main .wrapper,
     transition: opacity 0.4s ease-in-out;
 }
 
-.banners ul li:hover .banner-img{
+.banners .owl-item:hover .banner-img{
     opacity: 1;
-}
-
-.banners ul li#banner-1 .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/wabco-bw.jpg');
-}
-
-.banners ul li#banner-1:hover .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/wabco.png');
-}
-
-.banners ul li#banner-2 .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/saf-holland-bw.jpg');
-}
-
-.banners ul li#banner-2:hover .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/saf-holland.png');
-}
-
-.banners ul li#banner-3 .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/koegel-bw.jpg');
-}
-
-.banners ul li#banner-3:hover .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/koegel.png');
-}
-
-.banners ul li#banner-4 .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/knorr-bremse-bw.jpg');
-}
-
-.banners ul li#banner-4:hover .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/knorr-bremse.png');
-}
-
-.banners ul li#banner-5 .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/bpw-bw.jpg');
-}
-
-.banners ul li#banner-5:hover .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/bpw.png');
-}
-
-.banners ul li#banner-6 .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/haldex-bw.jpg')
-}
-
-.banners ul li#banner-6:hover .banner-img{
-    background-image: url('http://dev.time4digital.pl/onroad/wp-content/uploads/2016/06/haldex-1.png');
 }
 
 

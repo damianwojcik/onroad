@@ -9,50 +9,44 @@
 
 				<div class="row">
 
-					<div class="span12">
 
-						<ul>
+					<div class="owl-carousel-banners">
 
-							<?php if( have_rows('banner', 'option') ): ?>
+						<?php if( have_rows('banner', 'option') ): ?>
 
-								<?php $i = 1; ?>
+							<?php while ( have_rows('banner', 'option') ) : the_row(); ?>
 
-								<?php while ( have_rows('banner', 'option') ) : the_row(); ?>
-
-								<?php
+							<?php
 
 								$image = get_sub_field('image');
-								$image_bw = get_sub_field('image_bw');
 								$link = get_sub_field('link');
-
 
 								if( empty($link) ){ $link = '#'; }
 
-								?>
+							?>
 
-									<li id="banner-<?php echo $i; ?>">
+							<div class="owl-item">
 
-										<a href="<?php if( !empty($link) ): ?><?php echo $link; ?><?php endif; ?>">
+								<a target="_blank" href="<?php if( !empty($link) ): ?><?php echo $link; ?><?php endif; ?>">
 
-											<div class="banner-img"></div>
+									<div class="banner-img" style="background-image: url(<?php echo $image['url']; ?>)"></div>
 
-										</a>
+								</a>
 
-									</li>
+							</div>
+							<!-- END owl-item -->
 
-									<?php $i = $i + 1; ?>
+							<?php endwhile; ?>
 
-								<?php endwhile; ?>
-
-							<?php endif; ?>
-
-						</ul>
+						<?php endif; ?>
 
 					</div>
+					<!-- END owl-carousel-banners -->
 
 				</div>
 
 			</div>
+
 
 		</section>
 

@@ -63,11 +63,11 @@
 									</div>
 									<!-- END inner-wrap -->
 
-									<ul class="customDots owl-dots">
+									<!-- <ul class="customDots owl-dots">
 										<li class="owl-dot"></li>
 										<li class="owl-dot"></li>
 										<li class="owl-dot"></li>
-									</ul>
+									</ul> -->
 
 								</div>
 								<!-- END wrap -->

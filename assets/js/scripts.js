@@ -1,7 +1,8 @@
 jQuery(document).ready(function($){
 
 	// Init functions
-	owl_init();
+	owl_slider_init();
+	owl_banners_init();
 	mobile_menu_toggle();
 	searchbox();
 
@@ -16,18 +17,43 @@ jQuery(document).ready(function($){
 		windH = $wind.height();
 
 
-	function owl_init(){
+	function owl_slider_init(){
 		$('.owl-carousel').owlCarousel({
 			items: 1,
 		    loop: true,
 		    autoplay: true,
-		    autoplayTimeout: 4000,
+		    autoplayTimeout: 6000,
 		    autoplayHoverPause: true,
 		    dotsContainer: '.customDots'
 		});
 
 		$('.owl-dot').click( function(){
 			owl.trigger('to.owl.carousel', [$(this).index(), 300])
+		});
+
+	}
+
+	function owl_banners_init(){
+		$('.owl-carousel-banners').owlCarousel({
+			autoplay: true,
+			autoplayTimeout: 4000,
+		    loop:true,
+		    margin:0,
+		    nav: false,
+		    items: 4,
+			dots: false,
+		    // autoWidth: true,
+		    responsive:{
+				1024:{
+					items:4
+				},
+				768:{
+					items:3
+				},
+		        0:{
+		            items:2
+		        }
+		    }
 		});
 
 	}

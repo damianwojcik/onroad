@@ -789,11 +789,9 @@
 		height: auto;
 	}
 
-    .banners ul li{
-		width: 33.3%;
-	}
-
-	.banners ul li .banner-img{
+	/*banners*/
+	.banners .owl-item a,
+	.banners .owl-item .banner-img{
 		height: 120px;
 	}
 
@@ -1248,16 +1246,9 @@
 	}
 
     /*banners*/
-	.banners ul li .banner-img{
+	.banners .owl-item a,
+	.banners .owl-item .banner-img{
 		height: 100px;
-	}
-
-	.banners ul li{
-		width: 50%;
-    }
-
-	.banners ul li img{
-		width: 80%;
 	}
 
 
