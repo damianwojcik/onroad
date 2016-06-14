@@ -21,6 +21,7 @@ jQuery(document).ready(function($){
 		$('.owl-carousel').owlCarousel({
 			items: 1,
 		    loop: true,
+			animateOut: 'fadeOut',
 		    autoplay: true,
 		    autoplayTimeout: 6000,
 		    autoplayHoverPause: true,
@@ -40,10 +41,13 @@ jQuery(document).ready(function($){
 		    loop:true,
 		    margin:0,
 		    nav: false,
-		    items: 4,
+		    items: 6,
 			dots: false,
 		    // autoWidth: true,
 		    responsive:{
+				1270:{
+					items:6
+				},
 				1024:{
 					items:4
 				},

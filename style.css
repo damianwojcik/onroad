@@ -1165,6 +1165,18 @@ button.searchbox-toggle{
     background: #f7941e;
 }
 
+.animated{
+    visibility:hidden;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    -ms-animation-delay: 0.3s;
+}
+
+.owl-item.animated{
+    visibility: visible;
+}
+
 
 /* ---------------------------------------------------------------
     main
