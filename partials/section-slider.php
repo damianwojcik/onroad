@@ -29,7 +29,7 @@
 				?>
 
 				<!-- BEGIN slide -->
-				<div class="slide b-lazy" data-src="<?php echo $image['url']; ?>">
+				<div class="slide" style="background-image: url('<?php echo $image['url']; ?>')">
 
 					<div class="container">
 
