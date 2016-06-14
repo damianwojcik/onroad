@@ -60,7 +60,7 @@
 
       </div>
 
-      <a href="<?php the_permalink(); ?>" class="btn btn-arrow-right">WiÄcej</a>
+      <a href="<?php the_permalink(); ?>" class="btn btn-arrow-right">Więcej</a>
 
     </li>
 
