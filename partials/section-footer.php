@@ -10,7 +10,7 @@
 
 				<?php if( !empty($logo_footer) ): ?>
 
-					<a href="<?= SITE_URL; ?>"><img src="<?php echo $logo_footer['url']; ?>" alt="<?php echo $logo_footer['alt']; ?>"></a>
+					<a href="<?= SITE_URL; ?>"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $logo_footer['url']; ?>" alt="<?php echo $logo_footer['alt']; ?>"></a>
 
 				<?php endif; ?>
 

@@ -32,7 +32,7 @@
 
 						<a href="<?php the_permalink(); ?>" class="tile-img-link">
 
-							<div class="tile-img" style="background-image: url(<?php echo $thumbnail[0]; ?>)"></div>
+							<div class="tile-img b-lazy" data-src="<?php echo $thumbnail[0]; ?>"></div>
 
 						</a>
 

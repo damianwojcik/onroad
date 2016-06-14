@@ -3,7 +3,7 @@
 	$category_name = str_replace('"', "", $categories[0]->name);
 ?>
 
-<section class="title" style="background-image:url('<?= THEME_URL; ?>/assets/img/title-bg.jpg');">
+<section class="title b-lazy" data-src="<?= THEME_URL; ?>/assets/img/title-bg.jpg">
 
 	<div class="container">
 

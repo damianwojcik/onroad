@@ -54,7 +54,7 @@
 
 														<a href="<?php if( !empty($link) ): ?><?php echo $link; ?><?php endif; ?>">
 
-															<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+															<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
 
 														</a>
 

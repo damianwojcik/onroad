@@ -140,7 +140,7 @@
 
 								?>
 
-								<a href="<?php echo $link; ?>" class="info-photobox" style="background-image: url('<?php if( !empty($image) ): ?><?php echo $image['url']; ?><?php endif; ?>');">
+								<a href="<?php echo $link; ?>" class="info-photobox b-lazy" data-src="<?php if( !empty($image) ): ?><?php echo $image['url']; ?><?php endif; ?>">
 
 									<div class="info-photobox-wrap">
 

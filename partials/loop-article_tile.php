@@ -29,11 +29,11 @@
 
         <a href="<?php the_permalink(); ?>" class="tile-img-link">
 
-          <div class="tile-img
+          <div class="tile-img b-lazy
             <?php if( get_field('checkbox') ) {
                 echo 'thumb-symbol';
             }
-          ?>"<?php if( !empty($thumbnail) ){ ?> style="background-image: url(<?php echo $thumbnail[0]; ?>)" <?php } ?>>
+          ?>"<?php if( !empty($thumbnail) ){ ?> data-src="<?php echo $thumbnail[0]; ?>" <?php } ?>>
 
             <?php if( empty($thumbnail) ){ ?>
 

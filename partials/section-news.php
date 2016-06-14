@@ -3,7 +3,7 @@
 		$args = array('posts_per_page' => 4, 'category' => '2');
 
 		$posts_array = get_posts( $args );
-		
+
 	?>
 
 	<?php if (!empty($posts_array)){ ?>
@@ -61,7 +61,7 @@
 
 								<a href="<?php the_permalink(); ?>" class="tile-img-link">
 
-				          <div class="tile-img"<?php if( !empty($thumbnail) ){ ?> style="background-image: url(<?php echo $thumbnail[0]; ?>)" <?php } ?>>
+				          <div class="tile-img b-lazy"<?php if( !empty($thumbnail) ){ ?> data-src="<?php echo $thumbnail[0]; ?>" <?php } ?>>
 
 				            <?php if( empty($thumbnail) ){ ?>
 

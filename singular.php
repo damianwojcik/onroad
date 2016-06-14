@@ -52,7 +52,7 @@
 
 									<?php if( !empty($thumbnail) && is_single() ): ?>
 
-										<div class="full-width-wrapper" style="background-image: url(<?php echo $thumbnail[0]; ?>);"></div>
+										<div class="full-width-wrapper b-lazy" data-src="<?php echo $thumbnail[0]; ?>"></div>
 
 									<?php endif; ?>
 

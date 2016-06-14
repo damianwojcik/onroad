@@ -28,7 +28,7 @@
 
 								<a target="_blank" href="<?php if( !empty($link) ): ?><?php echo $link; ?><?php endif; ?>">
 
-									<div class="banner-img" style="background-image: url(<?php echo $image['url']; ?>)"></div>
+									<div class="banner-img b-lazy"  data-src="<?php echo $image['url']; ?>"></div>
 
 								</a>
 

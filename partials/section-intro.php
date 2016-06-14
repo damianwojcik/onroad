@@ -25,14 +25,14 @@
 								<!-- BEGIN wrap-photo-large -->
 								<div class="wrap-photo-large <?php if(empty($photo_small)){ echo "single-photo"; } ?>">
 
-									<div class="photo" style="background-image: url('<?php echo $photo_large['url']; ?>');">
+									<div class="photo b-lazy" data-src="<?php echo $photo_large['url']; ?>">
 
 										<?php if( !empty($photo_small) ): ?>
 
 											<!-- BEGIN wrap-photo-small -->
 											<div class="wrap-photo-small">
 
-												<div class="photo" style="background-image: url('<?php echo $photo_small['url']; ?>');"></div>
+												<div class="photo b-lazy" data-src="<?php echo $photo_small['url']; ?>"></div>
 
 											</div>
 											<!-- END wrap-photo-small -->

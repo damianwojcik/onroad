@@ -39,6 +39,12 @@
 
 
 <!-- =================================================
+	section cookies
+================================================== -->
+<?php get_template_part("partials/section", "cookies"); ?>
+
+
+<!-- =================================================
 	section search-panel TOGGLED
 ================================================== -->
 <?php get_template_part("partials/section", "searchpanel"); ?>
