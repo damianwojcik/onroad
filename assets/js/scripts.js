@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
 
+
 	// Init functions
 	owl_slider_init();
 	owl_banners_init();
@@ -11,12 +12,7 @@ jQuery(document).ready(function($){
 	$(document).find('#searchform input').attr('placeholder', 'Wpisz wyszukiwaną frazę...');
 
 
-	var $body = $('body'),
-		$wind = $(window),
-		windW = $wind.width(),
-		windH = $wind.height();
-
-
+	//home slider init
 	function owl_slider_init(){
 		$('.owl-carousel').owlCarousel({
 			items: 1,
@@ -34,6 +30,8 @@ jQuery(document).ready(function($){
 
 	}
 
+
+	//banner slider init
 	function owl_banners_init(){
 		$('.owl-carousel-banners').owlCarousel({
 			autoplay: true,
@@ -62,6 +60,8 @@ jQuery(document).ready(function($){
 
 	}
 
+
+	//mobile menu toggle
     function mobile_menu_toggle(){
 	    $(".menu-toggle").click(function() {
 	        $(".mobile-navigation").stop().slideToggle(500);
@@ -74,7 +74,6 @@ jQuery(document).ready(function($){
 	function searchbox(){
 
 		var $toggle = 0;
-		// console.log($toggle);
 
 		$(".searchbox-toggle").click(function() {
 
@@ -87,8 +86,6 @@ jQuery(document).ready(function($){
 				$toggle = 0;
 			}
 
-			// console.log($toggle);
-
 	    });
 
 		$('#searchform input#s').on('focusout',function(){
@@ -96,7 +93,6 @@ jQuery(document).ready(function($){
 			$('.search-panel').removeClass('active');
 			$('.search-panel').stop().slideToggle(500);
 			$toggle = 0;
-			// console.log($toggle);
 
 		});
 

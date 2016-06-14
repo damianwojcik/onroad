@@ -1,4 +1,3 @@
-
 	<section class="featured">
 
 		<div class="container">

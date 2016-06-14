@@ -69,10 +69,10 @@
 										<div class="inner-wrap-deals">
 
 											<span class="value"><?php echo $value; ?></span>
-
 											<span class="description"><?php echo $description; ?></span>
 
 										</div>
+										<!-- END inner-wrap-deals -->
 
 									<?php }?>
 

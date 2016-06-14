@@ -61,8 +61,11 @@
 
 </ul>
 
+
+<!-- Pagination -->
 <div class="nav-previous alignleft"><?php next_posts_link( 'Poprzednie' ); ?></div>
 <div class="nav-next alignright"><?php previous_posts_link( 'Następne' ); ?></div>
+
 
 <?php else : ?>
 

@@ -69,10 +69,10 @@
 </ul>
 
 <div class="nav-previous alignleft"><?php next_posts_link( 'Poprzednie' ); ?></div>
-<div class="nav-next alignright"><?php previous_posts_link( 'NastÄpne' ); ?></div>
+<div class="nav-next alignright"><?php previous_posts_link( 'Następne' ); ?></div>
 
 <?php else : ?>
 
-  <p><?php _e('Przepraszamy, niestety nie znaleziono Ĺźadnych wpisĂłw speĹniajÄcych Twoje kryteria.'); ?></p>
+  <p><?php _e('Przepraszamy, niestety nie znaleziono żadnych wpisów spełniających Twoje kryteria.'); ?></p>
 
 <?php endif; ?>

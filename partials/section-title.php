@@ -3,39 +3,39 @@
 	$category_name = str_replace('"', "", $categories[0]->name);
 ?>
 
-	<section class="title" style="background-image:url('<?= THEME_URL; ?>/assets/img/title-bg.jpg');">
+<section class="title" style="background-image:url('<?= THEME_URL; ?>/assets/img/title-bg.jpg');">
 
-		<div class="container">
+	<div class="container">
 
-			<div class="row">
+		<div class="row">
 
-				<div class="wrap">
+			<div class="wrap">
 
-					<h1>
+				<h1>
 
-						<?php
+					<?php
 
-							if (is_category()) {
-							  single_cat_title();
-							} elseif (is_single()) {
-							  echo $category_name;
-							} elseif (is_search()) {
-								echo 'Szukaj';
-							} elseif (is_tag()) {
-								single_tag_title('Tag: ');
-							} else {
-							  the_title();
-							}
+						if (is_category()) {
+						  single_cat_title();
+						} elseif (is_single()) {
+						  echo $category_name;
+						} elseif (is_search()) {
+							echo 'Szukaj';
+						} elseif (is_tag()) {
+							single_tag_title('Tag: ');
+						} else {
+						  the_title();
+						}
 
-						?>
+					?>
 
-					</h1>
-
-				</div>
+				</h1>
 
 			</div>
 
 		</div>
 
-	</section>
-	<!-- END section slider -->
+	</div>
+
+</section>
+<!-- END section slider -->

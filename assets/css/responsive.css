@@ -1254,10 +1254,13 @@
 
 }
 
+
 @media screen and (max-width: 380px){
+
 
 	.info .span4 .info-photobox{
 		height: 245px;
 	}
+
 
 }

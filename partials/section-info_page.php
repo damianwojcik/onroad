@@ -1,4 +1,3 @@
-
 <?php if( have_rows('section_info', 'option') ): ?>
 
 	<?php while ( have_rows('section_info', 'option') ) : the_row(); ?>

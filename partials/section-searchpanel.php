@@ -1,4 +1,3 @@
-
 <section class="search-panel">
 
 	<div class="container">
@@ -8,7 +7,7 @@
 			<div class="wrap">
 
 					<?php dynamic_sidebar('search_panel'); ?>
-				
+
 			</div>
 
 		</div>

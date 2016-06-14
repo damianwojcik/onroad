@@ -1,4 +1,3 @@
-
 <?php if( have_rows('section_banners', 'option') ): ?>
 
 	<?php while ( have_rows('section_banners', 'option') ) : the_row(); ?>

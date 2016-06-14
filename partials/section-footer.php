@@ -1,4 +1,3 @@
-
 <footer>
 
 	<div class="container">
@@ -24,12 +23,12 @@
 				<nav>
 
 					<?php dynamic_sidebar('footer_menu'); ?>
-					
+
 				</nav>
 
 			</div>
 			<!-- END span8 -->
-			
+
 
 			<div class="span2">
 

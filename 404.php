@@ -31,13 +31,13 @@
 							================================================== -->
 							<article>
 
-                <h3>Strony nie znaleziono</h3>
+					            <h3>Strony nie znaleziono</h3>
 
-                <p>
+					            <p>
 
-                  Przepraszamy ale strona, której szukasz (<span style="opacity:0.7;"><?= $actual_link; ?></span>) nie została odnaleziona. Sprawdź, czy adres URL nie zawiera błędów lub wróć na <a href="<?= SITE_URL; ?>">stronę główną</a>.
+					              Przepraszamy ale strona, której szukasz (<span style="opacity:0.7;"><?= $actual_link; ?></span>) nie została odnaleziona. Sprawdź, czy adres URL nie zawiera błędów lub wróć na <a href="<?= SITE_URL; ?>">stronę główną</a>.
 
-                </p>
+					            </p>
 
 							</article>
 
@@ -51,14 +51,11 @@
 			<!-- END span8 main -->
 
 
-      <!-- =================================================
-        aside
-      ================================================== -->
-      <?php get_template_part("partials/aside"); ?>
+			<!-- =================================================
+				aside
+			================================================== -->
+			<?php get_template_part("partials/aside"); ?>
 
-
-			</div>
-			<!-- END span4 aside -->
 
 		</div>
 

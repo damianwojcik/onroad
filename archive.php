@@ -33,23 +33,23 @@
 							================================================== -->
 							<div class="wrapper">
 
-                <!-- partial for articles -->
+                                <!-- partial for articles -->
+                                <?php if($category_id == 2){ ?>
 
-                <?php if($category_id == 2){ ?>
+                                    <?php get_template_part("partials/loop", "article_tile"); ?>
 
-    							<?php get_template_part("partials/loop", "article_tile"); ?>
+        						<?php } elseif($category_id == 4){ ?>
 
-    						<?php } elseif($category_id == 4){ ?>
+                                    <?php get_template_part("partials/loop", "deals_listing"); ?>
 
-    							<?php get_template_part("partials/loop", "deals_listing"); ?>
+        						<?php } else{ ?>
 
-    						<?php } else{ ?>
+                                    <h2>Ta kategoria nie posiada jeszcze strony archiwum.</h2>
 
-                  <h2>Ta kategoria nie posiada jeszcze strony archiwum.</h2>
-
-                <?php } ?>
+                                <?php } ?>
 
 							</div>
+                            <!-- END wrapper -->
 
 						</div>
 
@@ -61,18 +61,16 @@
 			<!-- END span8 main -->
 
 
-      <!-- =================================================
-        aside
-      ================================================== -->
-      <?php get_template_part("partials/aside"); ?>
+            <!-- =================================================
+                aside
+            ================================================== -->
+            <?php get_template_part("partials/aside"); ?>
 
-
-			</div>
-			<!-- END span4 aside -->
 
 		</div>
 
 	</div>
+    <!-- END container shadow -->
 
 </section>
 <!-- END section content -->

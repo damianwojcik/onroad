@@ -1,4 +1,3 @@
-	
 	<?php if( have_rows('section_intro', 'option') ): ?>
 
 		<?php while ( have_rows('section_intro', 'option') ) : the_row(); ?>
@@ -37,7 +36,7 @@
 
 											</div>
 											<!-- END wrap-photo-small -->
-											
+
 										<?php endif; ?>
 
 									</div>
@@ -57,7 +56,6 @@
 
 							<div class="wrap">
 
-
 								<!-- headline -->
 								<?php if( !empty($headline) ): ?>
 
@@ -67,10 +65,8 @@
 
 								<?php endif; ?>
 
-
 								<!-- content -->
 								<?php if( !empty($content) ): ?><?php echo $content; ?><?php endif; ?>
-
 
 							</div>
 

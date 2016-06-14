@@ -1,57 +1,54 @@
+<?php
 
+	$args = array('posts_per_page' => 5, 'category' => '2');
+	$posts_array = get_posts( $args );
 
-	<?php
+?>
 
-		$args = array('posts_per_page' => 5, 'category' => '2');
+<?php if (!empty($posts_array)){ ?>
 
-		$posts_array = get_posts( $args );
+	<div class="row">
 
-	?>
+		<h3>
+			Pozostałe aktualności
+		</h3>
 
-	<?php if (!empty($posts_array)){ ?>
+		<ul class="recent-articles">
 
-		<div class="row">
+			<?php foreach ($posts_array as $post) { ?>
 
-			<h3>
-				Pozostałe aktualności
-			</h3>
+				<?php
 
-			<ul class="recent-articles">
+					$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
+					$title = get_the_title();
+					$day = get_the_date('l');
+					$date = get_the_date('M');
 
-				<?php foreach ($posts_array as $post) { ?>
+				?>
 
-					<?php
+				<li>
 
-						$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
-						$title = get_the_title();
-						$day = get_the_date('l');
-						$date = get_the_date('M');
+					<?php if( !empty($thumbnail) ): ?>
 
-					?>
+						<a href="<?php the_permalink(); ?>" class="tile-img-link">
 
-					<li>
+							<div class="tile-img" style="background-image: url(<?php echo $thumbnail[0]; ?>)"></div>
 
-						<?php if( !empty($thumbnail) ): ?>
+						</a>
 
-							<a href="<?php the_permalink(); ?>" class="tile-img-link">
+					<?php endif; ?>
 
-								<div class="tile-img" style="background-image: url(<?php echo $thumbnail[0]; ?>)"></div>
+					<span class="date"><?php echo $day; ?>, <?php echo get_the_date('Y-m-d'); ?></span>
 
-							</a>
+					<a href="<?php the_permalink(); ?>"><h4><?php echo $title; ?></h4></a>
 
-						<?php endif; ?>
+				</li>
 
-						<span class="date"><?php echo $day; ?>, <?php echo get_the_date('Y-m-d'); ?></span>
+			<?php } // END foreach ?>
 
-						<a href="<?php the_permalink(); ?>"><h4><?php echo $title; ?></h4></a>
+		</ul>
 
-					</li>
+	</div>
+	<!-- END row -->
 
-				<?php } // END foreach ?>
-
-			</ul>
-
-		</div>
-		<!-- END row -->
-
-		<?php } // END if !empty($posts_array) ?>
+	<?php } // END if !empty($posts_array) ?>

@@ -1,44 +1,42 @@
+<?php
 
-	<?php
+	$args = array('posts_per_page' => 5, 'category' => '4');
+	$posts_array = get_posts( $args );
 
-		$args = array('posts_per_page' => 5, 'category' => '4');
+?>
 
-		$posts_array = get_posts( $args );
-
-	?>
-
-	<?php if (!empty($posts_array)){ ?>
+<?php if (!empty($posts_array)){ ?>
 
 
-	<div class="row">
+<div class="row">
 
-		<h3>Aktualne promocje</h3>
+	<h3>Aktualne promocje</h3>
 
-		<ul class="deals-listing">
+	<ul class="deals-listing">
 
-			<?php foreach ($posts_array as $post) { ?>
+		<?php foreach ($posts_array as $post) { ?>
 
-				<?php
+			<?php
 
-					$value = get_field('value');
-					$description = get_field('description');
-					$trimmed_description = wp_trim_words( $description, 20 );
+				$value = get_field('value');
+				$description = get_field('description');
+				$trimmed_description = wp_trim_words( $description, 20 );
 
-				?>
+			?>
 
-				<li>
-					<a href="<?php the_permalink(); ?>">
-						<span class="value"><?php echo $value; ?></span>
-						<span class="description"><?php echo $trimmed_description; ?></span>
-					</a>
-				</li>
+			<li>
+				<a href="<?php the_permalink(); ?>">
+					<span class="value"><?php echo $value; ?></span>
+					<span class="description"><?php echo $trimmed_description; ?></span>
+				</a>
+			</li>
 
-			<?php } // END foreach ?>
+		<?php } // END foreach ?>
 
 
-		</ul>
+	</ul>
 
-	</div>
-	<!-- END row -->
+</div>
+<!-- END row -->
 
-	<?php } // END if !empty($posts_array) ?>
+<?php } // END if !empty($posts_array) ?>

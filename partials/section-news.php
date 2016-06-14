@@ -3,7 +3,7 @@
 		$args = array('posts_per_page' => 4, 'category' => '2');
 
 		$posts_array = get_posts( $args );
-// dfhdhsdhfshdfdfhdshfdshdfh
+		
 	?>
 
 	<?php if (!empty($posts_array)){ ?>

@@ -1,4 +1,3 @@
-
 	<section class="navigation">
 
 		<div class="container">
@@ -24,16 +23,15 @@
 
 				<div class="span11">
 
+					<!-- navigation -->
 					<nav>
 
 						<?php dynamic_sidebar('main_menu'); ?>
 
 					</nav>
 
-
 					<!-- search-panel toggle -->
 					<button class="searchbox-toggle"></button>
-
 
 					<!-- mobile nav toggle-->
 					<a class="nav-toggle" href="#">
@@ -49,9 +47,9 @@
 							</div>
 
 						</div>
-						<!-- END menu-toggle -->
 
 					</a>
+					<!-- END mobile nav toggle -->
 
 				</div>
 				<!-- END span11 -->
