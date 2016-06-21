@@ -11,6 +11,8 @@
 		// load styles
 		wp_enqueue_style( 'font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' , '', NULL);
 		wp_enqueue_style( 'site_styles', THEME_URL .'/style.css', '', NULL);
+		// wp_enqueue_style( 'site_styles_unmin', THEME_URL .'/style_unmin.css');
+		// wp_enqueue_style( 'responsive_site_styles_unmin', THEME_URL .'/responsive_unmin.css');
 
 	}
 

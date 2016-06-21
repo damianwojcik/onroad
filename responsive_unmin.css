@@ -1,0 +1,892 @@
+@media screen and (max-width:1270px) {
+    .container {
+        width: 90%
+    }
+    p {
+        font-size: 14px
+    }
+    main section {
+        padding-bottom: 70px
+    }
+    .wrap-photo-large {
+        height: 335px
+    }
+    .wrap-photo-small {
+        height: 160px
+    }
+    .wrap-photo-large.single-photo {
+        height: 460px
+    }
+    .info-wrap {
+        width: 100%
+    }
+    .info-heading h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: -12px
+    }
+    .info-heading h3 small {
+        font-size: 12px;
+        line-height: 24px
+    }
+    .info-heading .enum-large {
+        font-size: 48px;
+        line-height: 24px
+    }
+    .mobile-navigation {
+        position: relative;
+        top: 0
+    }
+    .navigation {
+        display: block;
+        position: relative
+    }
+    .news .span3:last-child,
+    .searchbox .searchbox-submit {
+        display: none
+    }
+    .navigation .container {
+        width: 100%;
+        padding: 0 10px 0 25px
+    }
+    .navigation .span1:before {
+        left: -45px
+    }
+    .navigation .span1 {
+        width: 12%
+    }
+    .navigation .span11 {
+        width: 88%
+    }
+    .navigation nav {
+        padding-right: 0
+    }
+    .navigation nav ul li a {
+        padding: 30px 29px
+    }
+    .searchbox .searchbox-input {
+        padding: 0
+    }
+    .slider .slide,
+    .slider .slide .wrap {
+        height: 600px
+    }
+    .slider .slide h1 {
+        font-size: 58px
+    }
+    .slider .slide h1 small {
+        font-size: 31px
+    }
+    .title,
+    .title .wrap {
+        height: 200px
+    }
+    .title h1 {
+        padding-bottom: 0
+    }
+    .featured .featured-box .wrap {
+        width: 80%
+    }
+    .page-template-page-services .featured {
+        margin-top: 70px
+    }
+    .content,
+    .info-page {
+        margin-top: 0
+    }
+    .intro {
+        padding-bottom: 65px
+    }
+    .intro p:last-child {
+        margin-bottom: 0
+    }
+    .intro .span4,
+    .intro .span8 {
+        margin: 0
+    }
+    .intro .span8 {
+        text-align: center
+    }
+    .intro .span4 .wrap {
+        padding-top: 0
+    }
+    .info .span8 {
+        width: 60%
+    }
+    .info .span4 {
+        margin-left: 2%;
+        width: 38%
+    }
+    .info .wrap {
+        padding: 40px 0
+    }
+    .info .span8 h2 {
+        margin-bottom: 30px
+    }
+    .info .span8 p {
+        margin-bottom: 40px
+    }
+    .info .span8 .span6:last-child .info-wrap {
+        padding-left: 35px
+    }
+    .info .span8 .span6:first-child {
+        width: 53%
+    }
+    .info .span8 .span6:last-child {
+        margin-left: 2%;
+        width: 45%
+    }
+    .news {
+        padding-bottom: 60px
+    }
+    .news article p {
+        font-size: 14px
+    }
+    .news .span3 {
+        width: 29%;
+        margin-left: 6.5%
+    }
+    .news .span3:first-child {
+        margin-left: 0
+    }
+    footer .row-tight .span1 {
+        width: 13%
+    }
+    footer .row-tight .span9 {
+        width: 75%
+    }
+    footer .row-tight .span2 {
+        width: 12%
+    }
+    footer nav ul li a,
+    footer nav ul li a:visited {
+        padding: 30px 27px
+    }
+    .content .container.shadow {
+        width: 100%
+    }
+    .content .span4,
+    .content .span8 {
+        width: 100%;
+        margin: 0
+    }
+    .content main .container {
+        width: 90%
+    }
+    .content article,
+    main .wrapper {
+        padding-right: 0
+    }
+    .content article .btn {
+        margin-bottom: 20px
+    }
+    .breadcrumbs-wrap {
+        margin-bottom: 25px
+    }
+    .breadcrumbs-wrap .separator,
+    .breadcrumbs-wrap>span {
+        font-size: 11px
+    }
+    .info-page {
+        padding: 65px 0
+    }
+    .info-wrap {
+        margin-bottom: 0
+    }
+    .info-page .span4:nth-child(1) {
+        margin-right: 7%;
+        width: 27%
+    }
+    .info-page .span4:nth-child(2) {
+        margin-left: 0;
+        margin-right: 7%;
+        width: 36%
+    }
+    .info-page .span4:nth-child(3) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 23%
+    }
+    .info-page .btn,
+    .info-page .btn:hover {
+        width: 100%
+    }
+    aside .container .row {
+        width: 100%;
+        float: none;
+        display: block
+    }
+    aside .container .row:first-child {
+        margin-right: 0;
+        margin-bottom: 40px
+    }
+    aside .container .row:not(:first-child) {
+        padding-top: 0
+    }
+    aside .container {
+        width: 90%
+    }
+    aside ul.recent-articles li {
+        width: 32%;
+        margin-right: 2%;
+        float: left
+    }
+    aside ul.recent-articles li:nth-child(3n) {
+        margin-right: 0
+    }
+    aside ul.recent-articles li a h4 {
+        min-height: 35px
+    }
+    aside ul.deals-listing li {
+        width: 32%;
+        margin-right: 2%;
+        float: left
+    }
+    aside ul.deals-listing li:nth-child(3n) {
+        margin-right: 0
+    }
+    aside ul.deals-listing li span.description {
+        min-height: 110px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .mobile-navigation {
+        display: none!important
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .wrap-photo-large.single-photo,
+    blockquote {
+        width: 100%
+    }
+    .desktop,
+    .navigation .span11 nav {
+        display: none
+    }
+    .intro .span8 .wrap,
+    .navigation .span1 .logo,
+    .slider .slide .span6,
+    blockquote {
+        text-align: center
+    }
+    main section {
+        padding-bottom: 60px
+    }
+    .align-left {
+        float: none;
+        width: 100%
+    }
+    blockquote {
+        font-size: 18px;
+        line-height: 26px
+    }
+    .wrap-photo-large,
+    .wrap-photo-large.single-photo {
+        height: 420px;
+        position: relative
+    }
+    .wrap-photo-small {
+        height: 200px;
+        position: absolute;
+        bottom: -80px;
+        right: -30px
+    }
+    .navigation .container {
+        padding: 0
+    }
+    .navigation .span1 {
+        width: 20%
+    }
+    .navigation .span11 {
+        width: 80%
+    }
+    .navigation .span1 a img {
+        display: inline-block;
+        margin-top: 12px
+    }
+    .navigation .span1 a {
+        height: 70px;
+        width: 100%
+    }
+    .menu-toggle {
+        display: block
+    }
+    button.searchbox-toggle {
+        width: 70px;
+        height: 70px;
+        margin-right: 70px
+    }
+    .slider .slide,
+    .slider .slide .wrap {
+        height: 480px
+    }
+    .slider .slide .wrap {
+        display: table;
+        margin: 0 auto;
+        height: 480px
+    }
+    .slider .slide .wrap .inner-wrap {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%
+    }
+    .slider .slide:after,
+    .title:after {
+        display: none
+    }
+    .slider .slide:before,
+    .title:before {
+        opacity: .5
+    }
+    .page-template-page-services .title h1 {
+        padding-top: 0
+    }
+    .slider .slide .span6 {
+        width: 100%;
+        float: none
+    }
+    .slider .slide .span6 .wrap .btn,
+    .slider .slide .span6 .wrap .btn:hover {
+        width: 100%;
+        padding: 15px 30px
+    }
+    .slider .slide .span6 .wrap .btn.btn-transparent:after,
+    .slider .slide .span6 .wrap .btn.btn-transparent:before {
+        right: 22%
+    }
+    .news .span3:last-child,
+    footer {
+        display: block
+    }
+    .title .container {
+        width: 90%
+    }
+    .featured {
+        margin-top: -66px
+    }
+    .featured .featured-box h3 {
+        font-size: 26px
+    }
+    .featured .featured-box .btn,
+    .featured .featured-box .wrap {
+        width: 75%
+    }
+    .featured .featured-box .btn.btn-arrow-right:after {
+        right: 37%
+    }
+    .intro {
+        padding-bottom: 50px
+    }
+    .intro .span4,
+    .intro .span8 {
+        width: 100%;
+        margin: 0
+    }
+    .intro .span8 {
+        margin-bottom: 120px
+    }
+    .intro .container {
+        width: 90%
+    }
+    .info {
+        background: #FFF;
+        padding: 0
+    }
+    .info .container {
+        width: 100%
+    }
+    .info .span4,
+    .info .span8 {
+        width: 100%;
+        margin: 0
+    }
+    .info .span4 {
+        position: relative;
+        width: 100%;
+        left: 0;
+        right: 0
+    }
+    .info .span8 .wrap {
+        width: 90%;
+        margin: 0 auto
+    }
+    .info .btn {
+        width: 100%
+    }
+    .info .span4 .info-photobox {
+        width: 50%;
+        float: left
+    }
+    .news .span12 {
+        margin-top: 50px
+    }
+    .news .btn,
+    .news .btn:hover {
+        width: 48%;
+        padding: 15px 30px
+    }
+    .news .btn.btn-transparent-orange:after,
+    .news .btn.btn-transparent-orange:before {
+        right: 15%
+    }
+    .news .span3 {
+        width: 48%;
+        margin-left: 4%
+    }
+    .news .span3:nth-child(odd) {
+        margin-left: 0
+    }
+    .news .span3:nth-child(-n+2) {
+        margin-bottom: 50px
+    }
+    .banners {
+        border-bottom: 20px solid #000
+    }
+    footer .row-tight .span9 {
+        display: none
+    }
+    footer .row-tight .span1,
+    footer .row-tight .span2 {
+        width: 50%;
+        margin: 0
+    }
+    footer .span1 a {
+        height: 70px
+    }
+    footer .span1 a img {
+        margin-top: 10px
+    }
+    footer .span2 p,
+    footer .span2 p a {
+        line-height: 55px
+    }
+    .content .span4,
+    .content .span8 {
+        width: 100%
+    }
+    .content article blockquote.align-left {
+        width: 100%;
+        float: none;
+        text-align: center
+    }
+    .content .article-img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px
+    }
+    .content article p.align-left {
+        float: none;
+        width: 100%
+    }
+    .info-page .span4:nth-child(1) h2,
+    .info-page .span4:nth-child(1) p {
+        float: left;
+        width: 30%;
+        margin-right: 5%
+    }
+    .full-width-wrapper {
+        margin-bottom: 35px
+    }
+    .content article p.lead {
+        font-size: 16px;
+        margin-bottom: 20px;
+        line-height: 26px
+    }
+    .content article p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        line-height: 24px
+    }
+    .wrap-expose {
+        font-size: 14px;
+        top: -15px;
+        margin-bottom: -5px
+    }
+    aside ul.deals-listing li,
+    aside ul.recent-articles li {
+        width: 48%;
+        margin-right: 4%
+    }
+    aside ul.deals-listing li:nth-child(2n),
+    aside ul.recent-articles li:nth-child(2n) {
+        margin-right: 0
+    }
+    aside ul.deals-listing li:nth-child(3n),
+    aside ul.recent-articles li:nth-child(3n) {
+        margin-right: 4%
+    }
+    aside ul.deals-listing li span.description {
+        min-height: 60px
+    }
+    .info-page .span4:nth-child(1) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5%
+    }
+    .info-page .span4:nth-child(1) p {
+        height: 75px;
+        overflow: hidden
+    }
+    .info-page .span4:nth-child(1) .btn {
+        width: 30%;
+        float: left
+    }
+    .info-page .span4:nth-child(2) {
+        width: 47.5%;
+        margin-right: 5%;
+        margin-left: 0
+    }
+    .info-page .span4:nth-child(3) {
+        width: 47.5%;
+        margin-left: 0
+    }
+    .info-page .btn,
+    .info-page .btn:hover {
+        width: 47.5%
+    }
+    ul.article-tiles li {
+        width: 100%;
+        margin: 0 0 45px
+    }
+    ul.article-tiles li:nth-child(even) {
+        margin-left: 0
+    }
+    ul.article-tiles li:last-child {
+        margin: 0
+    }
+    .tags-wrap,
+    ul.article-tiles li h3,
+    ul.article-tiles li p {
+        min-height: auto;
+        height: auto
+    }
+    .banners .owl-item .banner-img,
+    .banners .owl-item a {
+        height: 120px
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container,
+    .info .container,
+    .intro .container,
+    .news .container {
+        width: 85%
+    }
+    .mobile {
+        display: block
+    }
+    main section {
+        padding-bottom: 35px
+    }
+    .wrap-photo-large,
+    .wrap-photo-large.single-photo {
+        height: 245px;
+        position: relative
+    }
+    .wrap-photo-small {
+        height: 120px;
+        position: absolute;
+        bottom: -50px;
+        right: -40px
+    }
+    .navigation .span1 {
+        width: 30%
+    }
+    .navigation .span11 {
+        width: 70%
+    }
+    .slider .slide,
+    .slider .slide .span6 .wrap {
+        height: 420px
+    }
+    .featured {
+        margin-top: -64px
+    }
+    .featured .featured-box h3 {
+        font-size: 24px
+    }
+    .featured .span6 {
+        width: 100%;
+        margin-left: 0
+    }
+    .featured .span6:first-child {
+        margin-bottom: 25px
+    }
+    .featured .featured-box p {
+        height: auto;
+        margin-bottom: 15px
+    }
+    .intro .span8 {
+        margin-bottom: 80px
+    }
+    .info .container {
+        width: 100%
+    }
+    .info .span8 .span6,
+    .info .span8 .span6:first-child,
+    .info .span8 .span6:last-child {
+        width: 100%;
+        margin: 0
+    }
+    .info .span8 .span6:last-child .info-wrap {
+        padding-left: 0;
+        margin-bottom: 0
+    }
+    .info .span8 .wrap {
+        width: 85%
+    }
+    .info .span4 .info-photobox {
+        width: 100%;
+        float: none;
+        height: 300px
+    }
+    .info .info-heading {
+        margin-bottom: 20px
+    }
+    .info ul {
+        margin-bottom: 10px
+    }
+    .info ul:last-child {
+        margin-bottom: 45px
+    }
+    .news {
+        padding-bottom: 45px
+    }
+    .news .span12 .btn {
+        display: none
+    }
+    .news .span12 {
+        margin-bottom: 35px;
+        margin-top: 30px
+    }
+    .news article h3,
+    .news article p {
+        height: auto;
+        margin-bottom: 30px
+    }
+    .news .span3 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 45px
+    }
+    .news .btn.mobile {
+        float: none;
+        width: 85%;
+        margin: 0 auto
+    }
+    .info-page .span4:nth-child(1) .btn,
+    .info-page .span4:nth-child(1) h2,
+    .info-page .span4:nth-child(1) p,
+    .info-page .span4:nth-child(2),
+    .info-page .span4:nth-child(3),
+    aside ul.deals-listing li,
+    aside ul.recent-articles li {
+        margin-right: 0;
+        width: 100%
+    }
+    .aside aside {
+        padding: 45px 0 0
+    }
+    aside .container .row:first-child {
+        margin-bottom: 0
+    }
+    aside ul li:last-child {
+        border-bottom: none
+    }
+    aside ul {
+        margin-bottom: 20px
+    }
+    aside ul.deals-listing li span.value {
+        text-align: center
+    }
+    .info-page {
+        margin-top: 0;
+        padding: 40px 0 0
+    }
+    .info-wrap {
+        margin-bottom: 0
+    }
+    .info-page .span4:nth-child(1) {
+        margin-bottom: 45px
+    }
+    .info-page .span4:nth-child(1) p {
+        height: auto;
+        overflow: auto
+    }
+    .info-page .span4:nth-child(2) {
+        margin-bottom: 10px
+    }
+    .info-heading h3 {
+        font-size: 18px;
+        line-height: 1
+    }
+    .info-page p,
+    .info-page strong {
+        margin-bottom: 20px
+    }
+    ul.deals_listing-full li a.tile-img-link {
+        width: 100%;
+        margin-bottom: 30px
+    }
+    ul.deals_listing-full li .wrap {
+        width: 100%;
+        margin: 0
+    }
+}
+
+@media screen and (max-width:480px) {
+    .news .btn.btn-transparent-orange:after,
+    .news .btn.btn-transparent-orange:before,
+    .slider .slide .span6 .wrap .btn.btn-transparent:after,
+    .slider .slide .span6 .wrap .btn.btn-transparent:before {
+        right: 8%
+    }
+    main section {
+        padding-bottom: 35px
+    }
+    .wrap-expose {
+        padding: 10px;
+        margin-bottom: 0
+    }
+    .wrap-photo-large,
+    .wrap-photo-large.single-photo {
+        height: 245px;
+        position: relative;
+        width: 100%
+    }
+    .wrap-photo-small,
+    .wrap-photo-small .photo {
+        display: none
+    }
+    .info ul:last-child {
+        margin-bottom: 30px
+    }
+    .info-wrap ul li {
+        font-size: 14px
+    }
+    .info-wrap {
+        margin-bottom: 15px
+    }
+    .info .span4 .info-photobox {
+        height: 275px
+    }
+    .search-panel .wrap {
+        width: 100%
+    }
+    #searchform input {
+        font-size: 16px
+    }
+    .nav-next .btn.btn-transparent-small,
+    .nav-previous .btn.btn-transparent-small {
+        font-size: 12px
+    }
+    .navigation .span1 {
+        width: 40%
+    }
+    .navigation .span11 {
+        width: 60%
+    }
+    .mobile-navigation a {
+        padding: 25px 0;
+        font-size: 18px
+    }
+    .slider .slide h1 {
+        font-size: 43px
+    }
+    .slider .slide h1 small {
+        font-size: 23px
+    }
+    .title h1 {
+        font-size: 36px;
+        text-align: center
+    }
+    .featured {
+        margin-top: -60px
+    }
+    .featured .featured-box h3 {
+        font-size: 20px
+    }
+    .intro .span8 {
+        margin-bottom: 35px
+    }
+    .info .span8 p,
+    .news .span12 {
+        margin-bottom: 25px
+    }
+    .intro {
+        padding-bottom: 35px
+    }
+    .intro h2 {
+        font-size: 24px
+    }
+    .info .span8 h2 {
+        font-size: 28px
+    }
+    .info-heading .enum-large {
+        font-size: 38px
+    }
+    .info .span8 h3 {
+        font-size: 18px
+    }
+    .info .span8 h4 {
+        font-size: 14px
+    }
+    .info-photobox h3 {
+        font-size: 24px
+    }
+    .info-photobox h3 small {
+        font-size: 14px
+    }
+    .news h2 {
+        font-size: 28px
+    }
+    .news article h3 {
+        font-size: 16px
+    }
+    .news .span3,
+    .news .span3:nth-child(-n+2) {
+        margin-bottom: 35px
+    }
+    footer .row-tight .span1,
+    footer .row-tight .span2 {
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin: 0
+    }
+    footer .span1 a {
+        height: 55px
+    }
+    footer .span2 p,
+    footer .span2 p a {
+        font-size: 12px
+    }
+    .info-page .btn,
+    .info-page .btn:hover {
+        width: 100%
+    }
+    .single .inner-wrap-deals span.value,
+    ul.deals_listing-full li .wrap span.value {
+        font-size: 30px
+    }
+    .single .inner-wrap-deals span.description,
+    ul.deals_listing-full li .wrap span.description {
+        font-size: 14px
+    }
+    aside ul.deals-listing li span.value {
+        font-size: 28px
+    }
+    .banners .owl-item .banner-img,
+    .banners .owl-item a {
+        height: 100px
+    }
+}
+
+@media screen and (max-width:380px) {
+    .info .span4 .info-photobox {
+        height: 245px
+    }
+}
