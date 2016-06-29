@@ -6,7 +6,7 @@
 
 			<div class="wrap">
 
-					<?php dynamic_sidebar('search_panel'); ?>
+				<?php dynamic_sidebar('search_panel'); ?>
 
 			</div>
 
